@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BFP SYSTEM</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End Plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/styleprint.css">
+    <link rel="stylesheet" href="assets/css/design.css">
+    <link rel="stylesheet" href="assets/class/style.min.css">
+    <link rel="stylesheet" href="assets/class/designprint.css">
+    
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+     <div class="container-scroller">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a href="dashboard.html"><img style="width:80px; height: 75px; margin-left: -55px; border-radius: 27px; margin-top: 10px;"  src="logo.jpg" alt="BFP" /></a>
+          
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="123.png" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">admin</h5>
+                  <span id="pos"></span>
+                </div>
+              </div>
+             
+             
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Navigation</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="dashboard.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items"  >
+            <a class="nav-link" data-toggle="collapse" href="#forms" aria-expanded="false" aria-controls="forms">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Forms</span>
+              <i class="menu-arrow"></i>
+            </a>
+           <div class="collapse" id="forms" > 
+
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="buildingpermit.html">Evaluation Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="establishment.html">Inspection Certificate</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="electricalclearance.html">Electrical Clearance</a></li>   
+                <li class="nav-item"> <a class="nav-link" href="occupancyform.html">Occupancy Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="formmap.html"> Mapping and Tagging</a></li>    
+                <li class="nav-item"> <a class="nav-link" href="importexcelfile.html">Import Excel File</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#files" aria-expanded="false" aria-controls="files">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-bar"></i>
+              </span>
+              <span class="menu-title">Records</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="files">
+              <ul class="nav flex-column sub-menu">
+                 <li class="nav-item"> <a class="nav-link" href="buildingpermitprofile.html">Evaluation Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="establishmentprofile.html">Inspection Certificate</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="electricalprofile.html">Electrical Clearance</a></li>                
+                <li class="nav-item"> <a class="nav-link" href="occupancyprofile.html"> Occupancy Clearance</a></li>
+               
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#analytics" aria-expanded="false" aria-controls="analytics">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Data Analytics</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="analytics">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="maps.html">Map</a></li>
+                <li class="nav-item"> <a class="nav-link" href="charts.html">Charts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="lookerchart.html">Looker Chart</a></li>
+               
+               
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#archive" aria-expanded="false" aria-controls="archive">
+              <span class="menu-icon">
+                 <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">Reports</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="archive">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="listofbuildingpermits.html">Evaluation Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="listofestablishments.html">Inspection Certificate</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="listofclearance.html">Electrical Clearance</a></li>              
+                <li class="nav-item"> <a class="nav-link" href="listofoccupancy.html">Occupancy Clearance</a></li>
+                
+               
+               
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <span class="menu-icon">
+                <i class="mdi mdi-security"></i>
+              </span>
+              <span class="menu-title">Archives</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+               <li class="nav-item"> <a class="nav-link" href="arcevaluationclearance.html"> Evaluation Clearance </a></li>
+                <li class="nav-item"> <a class="nav-link" href="arcinspectioncertificate.html"> Inspection Certificate </a></li>
+                <li class="nav-item"> <a class="nav-link" href="arcelectricalclearances.html"> Electrical Clearance </a></li>         
+                <li class="nav-item"> <a class="nav-link" href="arcoccupancyclearance.html"> Occupancy Clearance </a></li>
+                
+              </ul>
+            </div>
+          </li>
+
+         
+
+
+        
+          
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+           
+          
+          
+         
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+         
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+             
+
+
+
+            
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial:../../partials/_navbar.html -->
+        
+
+          <style>
+           
+
+
+
+          </style>
+
+
+
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            
+            <div class="row">
+              
+              
+              <div class="col-12 grid-margin stretch-card">
+                <div class="card" id="printclearance" >
+                  <div class="card-body" style="border: solid 5px black; margin: 10px 10px 0px 10px; padding: 10px 25px 10px 30px;" >
+
+<br>
+                      <table width="100%">
+                <col style="width:10%">
+                <col style="width:50%">
+                  <col style="width:10%">
+                <thead>
+                  <tr>
+                    <td class="image"><img src="dilg.png"  width="75" style="margin-left: 50px;"></td>
+                    <td>     <center><p class="para">Republic of the Philippines<br>
+              <b> Department of the Interior and Local Government</b><br>
+             <span style="color: #151B54; font-weight: bold;"> BUREAU OF FIRE PROTECTION</span><br>
+                 Regional Offive VII<br>
+                 Province of Eastern Samar<br>
+                Dolores Fire Station <br>
+                 Hotline No. 09171776929<br>
+                 <span style="color: blue;">Email Add: <u> doloresfirestation2020@gmail.com</u></span>
+               </center></p></td>
+                    <td class="image"><img src="bfplogo.png" width="75" style="margin-right: 35px;"></td>
+                     
+                    
+
+                  </tr>
+                  
+
+                </thead>
+               </table>
+
+                    
+           
+    
+<br>
+                            
+                        
+                   
+
+               <table width="100%" align="left">
+                <col style="width:70%">
+                <col style="width:30%">
+                <thead>
+                  <tr>
+                    <td width="50%" style="width: 14px; color: black; font-weight: bold;"><p class="fsic"><b>FSCEC NO. <b/><u><span id="4" style="color: red;"></span></u></p></td>
+                    <td align = "center"> <p class="date1"><b> <u><span id="5"></span></b></u>
+                    <br>DATE</p></td>
+                     
+                    
+
+                  </tr>
+                  
+
+                </thead>
+               </table>
+<br>
+                <br>
+                          <br><br>
+                          
+                          
+
+                        <table width="100%">
+
+
+                          <tr>
+                    <td> <p class="fsafety1" align="center" style="font-size: 24px;"><b>FIRE SAFETY CLEARANCE</b></p></td>
+                   
+                    
+                  </tr>
+                    <tr>
+                    
+                    <td > <p align="center" style="font-size: 18px;"><b>(ELECTRICAL CLEARANCE)</b></p></td>
+                    
+                  </tr>
+                  
+                        </table>
+
+                        <br>
+                        
+                
+              
+
+                        <b><p class="whom" style="font-size: 15px;">TO WHOM IT MAY CONCERN:</p></b>
+
+
+                        <p style="font-size: 14px; margin-left: 35px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By Virtue of the provisions of RA 9514 otherwise known as the Fire Code of the Philippines of 2008 and its Implementing<br> Rules  and Regulations (IRR), this <b> CLEARANCE</b> is hereby issued to: </p>
+
+
+                          <table width="100%">
+                            <col style="width:40%">
+                            <col style="width:60%">
+                            <thead>
+                            <tr>
+                              <td><p style="font-size: 14px; ">&nbsp;&nbsp;Name of Building/Structure/Facility:</p></td>
+                               <td><u> <span class="par1" id="1" style="font-size: 15px; color: black; margin-left: -20px; text-align: center; font-weight:bold;"></span></u></td>
+
+                            </tr>
+
+                              <tr>
+                              <td><p style="font-size: 14px;">&nbsp;&nbsp;Name of Owner:</p></td>
+                               <td><u> <span class="par2" id="2" style="font-size: 15px; color: black; margin-left: 0px; text-align: center; font-weight: bold;"></span></u></td>
+
+                            </tr>
+
+                             <tr>
+                              <td><p style="font-size: 14px;">&nbsp;&nbsp;Location:</p></td>
+                               <td><u> <span class="par3" id="3" style="font-size: 15px; color: black; margin-left: -100px; text-align: center; font-weight: bold;"></span></u></td>
+
+                            </tr>
+
+                              </thead>
+                          </table>
+
+
+
+                          <table width="100%">
+                            <col style="width:37%">
+                            <col style="width:30%">
+                            <thead>
+
+                            <tr>
+                              <td><p style="font-size: 14px;">&nbsp;&nbsp;Kind of Installation: &nbsp;&nbsp;(&nbsp;)New(&nbsp;)Existing(&nbsp;)Additional(&nbsp;)Remodel &nbsp;&nbsp;</p></td>
+                               <td style="font-size: 14px; margin-left: -150px" > Voltage: <u> <span class="par4" id="6" style="font-size: 14px;"></span></u></td>
+
+                            </tr>
+
+                            </thead>
+                          </table>
+
+
+                            <table width="100%">
+                            <col style="width:40%">
+                            <col style="width:60%">
+                            <thead>
+                            <tr>
+                              <td><p style="font-size: 14px;">&nbsp;&nbsp;No. of Phase:</p></td>
+                               <td><u><span class="parag" id="7" style="font-size: 14px; margin-left: -189px; "> </span></u>&nbsp;&nbsp;<span style="font-size: 14px; ">Total Connected Load:</span><u><span class="parag" id="8" style="font-size:14px;"></span></u></span> <span style="font-size: 14px; ">(KVA)</span> <span style="font-size: 14px"> Main Circuit Breaker:</span> <u><span class="par5" id="9" style="font-size:14px;"></span></u> <span style="font-size:14px">(AT)</span></td>
+
+                            </tr>
+
+                              <tr>
+                              <td><p style="font-size: 14px;">&nbsp;&nbsp;Installed By:</p></td>
+                               <td><u><span class="parag" id="10" style="font-size: 14px; margin-left: -195px; "></span style="font-size: 14px; "></u> <span style="font-size: 14px; color: black;">PRC/Tesda License Number: </span> <u><span class="parag" id="11" style="font-size: 14px;"></span></u> <span style="font-size: 14px; color: black;">Valid Until:</span> <u><span class="parag" id="12" style="font-size: 14px;"></span></u></td>
+
+                            </tr>
+
+
+
+
+
+                              </thead>
+                          </table>
+                         
+
+
+                           <P style="font-size: 14px; margin-left: 35px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This clearance is hereby granted after said electrical plans and other documents submitted have been dully evaluated and found to be complied with the provisions of the Fire Code of the Philippines, Philippine Electrical <br> Code and other related laws.</p>
+
+
+                           <p style="font-size: 14px; margin-left: 35px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Violation of Fire Code provisions shall cause this Clearance <i>null and void</i> after appropriate proceeding and <br> shall hold the  contractor liable to the penalties provided for by the said Fire Code  </p>
+                           <br><br>
+
+
+
+                            <table width="100%" style="margin-left: 11px;">
+                            <col style="width:25%">
+                            <col style="width:10%">
+                            <col style="width:25%">
+                            <thead>
+                              <tr>
+                                <td><b style="font-size: 14px; color: black;">Fire Code Fees:</b></td>
+                                <td></td>
+                                <td><b style="font-size: 13px; color: black;">RECOMMEND APPROVAL:</b></td>
+                              </tr>
+
+                              <tr>
+                                <td style="font-size: 14px; color: black;">Amount Paid: <b><u><span id="13"> </span></u></b> </td>
+                                <td></td>
+                                <td><u><center style="font-size: 14px; font-weight: bold; color: black;">FO2 Mark Longenos A Evardone, BFP</center></td>
+                              </tr>
+
+                              <tr>
+                                <td style="font-size: 14px; color: black;">Q.R. Number:<b><u><span id="14"> </span></u></td>
+                                <td></td>
+                                <td><center style="font-size: 14px;  color: black;">C,FSES</center></td>
+                              </tr>
+
+                              <tr>
+                                <td style="font-size: 14px;  color: black;">Date: <b> <u><span id="date1"> </span></u></b></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+
+                               <tr>
+                                <td></td>
+                                <td></td>
+                                <td><b style="font-size: 13px;  color: black;">APPROVED:</b></td>
+                              </tr>
+                               </thead>
+                          </table>
+                              
+
+
+                         
+                             
+
+                               <table width="100%" >
+                           <col style="width:25%">
+                            <col style="width:10%">
+                            <col style="width:35%">
+                            <thead>
+
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td><center><u><b><center style="font-size: 14px; margin-left: 25px;  color: black;" >SFO2 Vitus M Mosacare, BFP</center></b></u></center></td>
+                              </tr>
+
+                               <tr>
+                                <td></td>
+                                <td></td>
+                                <td><cener style="font-size: 14px; margin-left: 70px;  color: black;">CARETAKER/MUNICIPAL FIRE MARSHAL</cener></td>
+                              </tr>
+
+                                </thead>
+                          </table>
+                          <br>
+                          <br>
+                              
+
+                           
+
+              <center><p class="note" style="font-size: 10px;"><i> <b>NOTE: "This Clearance is accompanied with APPROVED PLAN BY BFP and does not take the place of any license required by law and is not <br> transferable. Any change or alteration in the design and specification during installation shall require a new clearance"<b></i></p></center>  
+
+               <center><p class="note" style="font-size: 11px; color: red;">PAALALA: "MAHIGPIT NA IPINAGBABAWAL NG PAMUNUAN NG BUREAU OF FIRE PROTECTION SA MGA KAWANI NITO ANG MAGBENTA O MAGREKOMENDA NG ANUMANG BRAND NG FIRE EXTINGUISHER"</p></center>
+
+               <center><hp style="font-size: 22px;">"FIRE SAFETY IS OUR MAIN CONCERN"</p></center>
+
+               <p style="font-size: 8px; margin-bottom: 0px;">  <b>DISTRIBUTION: <br>
+                Original (Applicat/Owner's Copy) <br>
+                Duplicate (BFP Copy)</b></p>
+
+
+ 
+              
+
+
+
+                   
+
+
+
+
+
+                    
+
+
+
+
+                
+
+
+                 
+ 
+
+
+
+                      
+
+
+                      
+                                        
+                     
+                    
+                  </div>
+                  <p style="font-size: 13px; font-weight:bold; margin: 0px 0 0 18px;">BFP-QSF-FSED-039 Rev.02 (08.24.20)</p>
+                 
+                </div>
+              </div>
+             
+              
+              
+            
+          <!-- partial -->
+        </div>
+        <button class="btnprint" id="print" onclick="print">Print</button>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/chart.js"></script>
+    <!-- End custom js for this page -->
+  <<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- fullCalendar -->
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+
+ <script src="assets/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <!--Custom JavaScript -->
+    <script src="assets/js/custom.min.js"></script>
+
+    <script src="assets/js/print.js"></script>
+
+    <!-- End custom js for this page -->
+
+<script>
+
+
+ 
+  
+$(function () {
+
+
+function getfac(){
+
+                
+      let x = decodeURIComponent(document.cookie);
+
+                      if(x == "as"){
+
+
+                        window.location="index.html"
+                      }
+
+
+                      else{
+
+                         
+                          
+                        
+
+                        getcurrentuser(x);
+                       //  getpic(x);
+
+                      }
+
+                  }
+
+
+
+
+                        function getcurrentuser(a){
+                          
+                          
+
+
+
+                          
+              
+
+                                        $.ajax({
+                                          type: "POST",
+                                          url: "php/retrieveelectricalclearance.php",
+                                          dataType: "json",
+                                            data: {
+
+                                              a:a, 
+                                             
+                                             
+                                         
+                                            },
+                                          success: function(result){
+                                            var _res = result;
+                                            if(_res.status == 1){
+
+                                          
+                                             $("#1").text(_res.a1);
+                                             $("#2").text(_res.a2);
+                                             $("#3").text(_res.a3);
+                                             $("#4").text(_res.a4);
+                                             $("#5").text(_res.a5);
+
+
+                                             $("#6").text(_res.a7);
+                                             $("#7").text(_res.a8);
+                                             $("#8").text(_res.a9);
+                                             $("#9").text(_res.a10);
+                                             $("#10").text(_res.a11);
+                                             $("#11").text(_res.a12);
+                                             $("#12").text(_res.a13);
+                                             $("#13").text(_res.a14);
+                                             $("#14").text(_res.a15);
+                                             $("#date1").text(_res.a5);
+                                           
+                                           
+                                             
+                                           
+
+
+
+
+                                             
+                                            } 
+                                          }
+                                        });}
+
+
+                                $('#print').click(function () {
+
+
+                                                  printclear();
+                                                               });
+
+
+                               function printclear() 
+                           {
+
+                         var clearanceprint=document.getElementById('printclearance');
+
+                         var clearWin=window.open('','Print-Window');
+
+                         clearWin.document.open();
+
+                         clearWin.document.write('<html><body onload="window.print()">'+clearanceprint.innerHTML+'</body></html>');
+
+                         clearWin.document.close();
+
+                         setTimeout(function(){clearWin.close();},10);
+
+                            }
+
+
+
+                                     
+
+
+
+
+
+
+
+$(window).on("load", getfac());
+
+
+
+
+ 
+
+
+    
+
+
+
+
+
+
+
+
+
+   })
+
+</script>
+
+
+
+
+  </body>
+</html>
+

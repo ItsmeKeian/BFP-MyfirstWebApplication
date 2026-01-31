@@ -1,0 +1,31 @@
+<?php
+    include('databaseconnect.php');
+
+    $id = isset($_POST['a']) ? $_POST['a'] : "";
+
+    try {
+        $dbh = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
+        
+        $qry = "SELECT * FROM establishmentprofile WHERE establishment LIKE :id";
+        
+        $stmt = $dbh->prepare($qry);
+        $stmt->bindValue(':id', "%$id%", PDO::PARAM_STR);
+        
+        $stmt->execute();
+
+        $count = $stmt->rowCount();
+
+        if ($count > 0) {
+            $arr = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            echo json_encode($arr);
+        } else {
+            $arr = array("status" => 0);
+            echo json_encode($arr);
+        }
+    } catch (PDOException $e) {
+        $arr = array("err" => $e->getMessage());
+        echo json_encode($arr);
+    }
+
+    $dbh = null;
+?>

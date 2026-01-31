@@ -1,0 +1,991 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BFP SYSTEM</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End Plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a href="dashboard.html"><img style="width:80px; height: 75px; margin-left: -55px; border-radius: 27px; margin-top: 10px;"  src="logo.jpg" alt="BFP" /></a>
+          
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="123.png" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">Administrator</h5>
+                  
+                </div>
+              </div>
+             
+             
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Navigation</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="dashboard.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items"  >
+            <a class="nav-link" data-toggle="collapse" href="#forms" aria-expanded="false" aria-controls="forms">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Forms</span>
+              <i class="menu-arrow"></i>
+            </a>
+           <div class="collapse" id="forms" > 
+
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="buildingpermit.html">Evaluation Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="establishment.html">Inspection Certificate</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="electricalclearance.html">Electrical Clearance</a></li>   
+                <li class="nav-item"> <a class="nav-link" href="occupancyform.html">Occupancy Clearance</a></li>
+               
+                <li class="nav-item"> <a class="nav-link" href="importexcelfile.html">Import Excel File</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#files" aria-expanded="false" aria-controls="files">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-bar"></i>
+              </span>
+              <span class="menu-title">Records</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="files">
+              <ul class="nav flex-column sub-menu">
+                 <li class="nav-item"> <a class="nav-link" href="buildingpermitprofile.html">Evaluation Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="establishmentprofile.html">Inspection Certificate</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="electricalprofile.html">Electrical Clearance</a></li>                
+                <li class="nav-item"> <a class="nav-link" href="occupancyprofile.html"> Occupancy Clearance</a></li>
+               
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#analytics" aria-expanded="false" aria-controls="analytics">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Data Analytics</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="analytics">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="maps.html">Map</a></li>
+                <li class="nav-item"> <a class="nav-link" href="charts.html">Charts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="lookerchart.html">Looker Chart</a></li>
+               
+               
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#archive" aria-expanded="false" aria-controls="archive">
+              <span class="menu-icon">
+                 <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">Reports</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="archive">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="listofbuildingpermits.html">Evaluation Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="listofestablishments.html">Inspection Certificate</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="listofclearance.html">Electrical Clearance</a></li>              
+                <li class="nav-item"> <a class="nav-link" href="listofoccupancy.html">Occupancy Clearance</a></li>
+                
+               
+               
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <span class="menu-icon">
+                <i class="mdi mdi-security"></i>
+              </span>
+              <span class="menu-title">Archives</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+               <li class="nav-item"> <a class="nav-link" href="arcevaluationclearance.html"> Evaluation Clearance </a></li>
+                <li class="nav-item"> <a class="nav-link" href="arcinspectioncertificate.html"> Inspection Certificate </a></li>
+                <li class="nav-item"> <a class="nav-link" href="arcelectricalclearances.html"> Electrical Clearance </a></li>         
+                <li class="nav-item"> <a class="nav-link" href="arcoccupancyclearance.html"> Occupancy Clearance </a></li>
+                
+              </ul>
+            </div>
+          </li>
+
+         
+
+
+        
+          
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+           
+          
+          
+         
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+         
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                  <input type="text" class="form-control" id="search" placeholder="Search">
+                </form>
+              </li>
+             
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+             
+              
+              
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="123.png" alt="">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name" id="name1">admin</p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                  <span style="margin-top: -20px; margin-left:90px" id="pos"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">   
+                  <div class="dropdown-divider"></div>
+                  <a href="index.html" class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content" >
+                      <p class="preview-subject mb-1" >Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">ELECTRICAL CLEARANCE DATA</h4>
+                    
+                    <div class="">
+                      <div style="overflow: scroll ;max-height: 500px; width: 100%;">
+                      <table id="allrecords"  class="table table-bordered">
+                  <thead>
+                    <tr>
+                     
+                     <th>Select</th>
+                    
+                     
+                    <th scope="col">Name of Building</th>
+                     <th scope="col">Date</th>
+                        <th scope="col">Kind of Installation</th>
+                         <th scope="col">FSCEC NO. </th>
+                        <th scope="col">QR Number</th>
+            
+
+                    
+                     
+                              </tr>
+                  </thead>
+                   
+
+                  
+
+              </table>          
+                    </div>
+                    <BR>
+                    
+                    <button id="print" class="btn btn-success" fdprocessedid="ykz7xk">Print</button>
+                   <button id="view" class="btn btn-success" fdprocessedid="ykz7xk">View</button>
+
+                    <div class="modal fade" id="large-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">View Electrical Clearance</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                               
+                                              
+                                <form class="forms-sample">
+
+                                                    <div class="row">
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >Name of Building</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="text"  class="form-control" id="1"  />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >Name of Owner</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="2" />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >Address</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="text"  class="form-control" id="3"  />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >FSCEC NO.</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="4" />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >Date</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="date" class="form-control" id="5"  />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >Kind of Installation</label>
+                                                          <div class="col-sm-9">
+                                                            <select class="form-control" id="6">
+                                                              <option></option>
+                                                              <option>New</option>
+                                                              <option>Existing</option>
+                                                              <option>Additional</option>
+                                                              <option>Remodel</option>
+                                                            </select>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >Voltage</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="7"  />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >No. of Phase</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="8" />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >Total Connected Load</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="number" class="form-control" id="9"  />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >Main Circuit Breaker</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="number" class="form-control" id="10" />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >Installed By</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="11"  />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >PRC/Tesda License Number</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="12" />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >Valid Until</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="date" class="form-control" id="13"  />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >Amount Paid</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="14" />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                      <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                          <label class="col-sm-3 col-form-label" >Q.R. Number</label>
+                                                          <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="15"  />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                       <div class="col-md-6">
+                                                        <div class="form-group row">
+                                                         
+                                                          <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="16" hidden  />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      
+                                                    </div>
+
+                                                   
+                                                   
+                                                  </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="footer-btn bg-dark-low"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="button" class="footer-btn bg-linkedin" id="update">Save
+                                                    Changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                     <button id="delete" class="btn btn-success" fdprocessedid="ykz7xk">Delete</button>
+                     <button id="download" class="btn btn-success" fdprocessedid="ykz7xk">Download Excel File</button>
+                    
+                  </div>
+                </div>
+                </div>
+              </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright @Keyan(keyannocounter)</span>
+              
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/chart.js"></script>
+    <!-- End custom js for this page -->
+  <<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- fullCalendar -->
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- End custom js for this page -->
+
+<script>
+
+ 
+  
+$(function () {
+
+  deleterec2();
+
+
+  function deleterec2(){
+                     
+                            $.ajax({
+                                type: "POST",
+                                url: "php/deleteelectricalclearance2.php",
+                                dataType: "json",
+                                data: {
+                                  
+                                },
+                                        success: function(result){
+                                            if (result.status == 1) {
+                                              
+                                          
+                                                    } else {
+                                          
+          }
+        }
+      });
+
+    }
+
+ $("#update").click(function(){
+
+
+                     var a= $("#1").val();
+                     var b= $("#2").val();
+                     var c= $("#3").val();
+                     var d= $("#4").val();
+                     var e= $("#5").val();
+                     var f= $("#6").val();
+                     var g= $("#7").val();
+                     var h= $("#8").val();
+                     var i= $("#9").val();
+                     var j= $("#10").val();
+                     var k= $("#11").val();
+                     var l= $("#12").val();
+                     var m= $("#13").val();
+                     var n= $("#14").val();
+                     var o= $("#15").val();
+                     var p= $("#16").val();
+                     
+                     
+                     
+                    
+                     
+                     
+            
+                      
+                   
+                   
+
+                        
+                     
+                    
+
+                    
+                  
+
+                    
+                    if (a.length > 0){
+
+                                       
+                       save(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p);
+
+                      
+                    }
+
+                    else{
+
+                    alert("Please fill out fields!");
+                    }
+
+                  
+                            
+                          });
+
+
+    
+function   save(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p){
+
+
+
+
+                  $.ajax({
+                  type: "POST",
+                  url: "php/updateelectricalclearance.php",
+                  dataType: "json",
+                  data: {
+                      a:a,
+                      b:b,
+                      c:c,
+                      d:d,
+                      e:e,
+                      f:f,
+                      g:g,
+                      h:h,
+                      i:i,
+                      j:j,
+                      k:k,
+                      l:l,
+                      m:m,
+                      n:n,
+                      o:o,
+                      p:p,
+                     
+                     
+                      
+                     
+                      
+                   
+                  
+                      
+               
+                     
+                     
+
+                     
+                    
+                                     
+                            },
+                        
+                            success: function(result) { 
+                            var _res = result;
+                              if (_res.status == 1){
+
+                                  alert("Electrical Clearance Successfully Updated!")
+                                  window.location = "electricalprofile.html";
+
+                           
+                              } else if(_res.status == 2){
+                                    alert("Update Failed!");
+                                  
+                              
+                          
+                           
+                              }
+                              
+                            }
+                          
+                             
+
+                          });
+                        }
+
+  var searchme;
+
+  $("#allrecords").click(function(){
+
+        searchme= $('input[name=rrec]:checked').val();
+       
+                            
+                       });
+
+
+    function  getclearancedata(a){
+  
+     
+
+                          $.ajax({
+                            type: "POST",
+                            url: "php/retrieveelectricalclearance.php",
+                            dataType: "json",
+                              data: {
+                               a:a,
+                               
+                            
+                              },
+                            success: function(result){
+                              var _res = result;
+                              if(_res.status == 1){
+                                
+                              
+                                
+                              $("#1").val(_res.a1);
+                              $("#2").val(_res.a2);
+                              $("#3").val(_res.a3);
+                              $("#4").val(_res.a4);
+                              $("#5").val(_res.a5);
+                              $("#6").val(_res.a6);
+                              $("#7").val(_res.a7);
+                              $("#8").val(_res.a8);
+                              $("#9").val(_res.a9);
+                              $("#10").val(_res.a10);
+                              $("#11").val(_res.a11);
+                              $("#12").val(_res.a12);
+                              $("#13").val(_res.a13);
+                              $("#14").val(_res.a14);
+                              $("#15").val(_res.a15);
+                              $("#16").val(_res.a16);
+                              
+                             
+                              
+
+
+                               
+                                 
+
+                           
+                              } 
+                            }
+                          });}
+
+
+  loadallrecords(); 
+
+
+  $("#search").on("input", function(){
+
+                       var a= $("#search").val();
+
+                      filterrecords(a);
+                     
+
+                            
+                          });
+
+
+function filterrecords(a){
+
+  
+
+      $("#allrecords").find("tr.re-list").remove();
+      $.ajax({
+        type: "POST",
+           url: "php/filterelectricalclearance.php",
+        dataType: "json",
+        data: {
+          a:a,
+                
+        },
+        success: function(result){
+          if(typeof(result.status) === 'undefined')
+            $.each(result, function(val, key) {
+              $("#allrecords tr:last").after("<tr class='re-list'>" + 
+                "<td><input type='radio' name='rrec' value='" + key.clearance + "' /></td>" +
+                       "<td>" + key.buildingname+ "</td>" +
+                       "<td>" + key.dateiss+ "</td>" + 
+                     "<td>" + key.kindofinstall+ "</td>" +
+
+                   
+                     "<td>" + key.fscecno+ "</td>" +  
+                      "<td>" + key.qrnumber+ "</td>" +  
+                      
+              
+
+                
+
+                "<td></td></tr>");
+
+
+
+
+
+            });
+            var rows = $('#allrecords').find('tr').length;
+            if(rows == 1)
+              $("#allrecords tr:last").after("<tr class='re-list'><td colspan='2'>No record to display.</td></tr>");
+    
+        }
+
+      });
+    }
+
+
+
+
+  
+   $(document).ready(function () {
+            $('#view').on('click', function () {
+                getclearancedata(searchme);
+                $('#large-modal').modal('show');
+            });
+        });
+
+
+
+  $("#print").click(function(){
+
+         var owner = $('input[name=rrec]:checked').val();
+         document.cookie = owner;          
+        window.location="printclearance.html"                   
+                     
+                
+                            
+                       });
+
+
+
+     $("#download").click(function(){
+
+         window.location.href = 'php/downloadelectrical.php';
+  
+                    });
+
+
+
+  $("#delete").click(function(){
+
+
+  
+                        var fscecno = $('input[name=rrec]:checked').val();
+                        var res = confirm("Are you sure you want to remove this record?");
+                                if(res == true){
+                                    deleterec(fscecno);
+
+                                     
+                                }
+                    });
+
+
+
+function deleterec(id){
+                      var type = "establishment";
+                            $.ajax({
+                                type: "POST",
+                                url: "php/deleteelectricalclearance.php",
+                                dataType: "json",
+                                data: {
+                                    id: id,
+                                    type,
+                                },
+                                        success: function(result){
+                                            if (result.status == 1) {
+                                            alert("Record successfully removed!");
+                                            window.location = "electricalprofile.html";
+                                                    } else {
+                                            alert("ERROR deleting data. Please try again.");
+          }
+        }
+      });
+
+    }
+
+
+function getfac(){
+
+                
+      let x = decodeURIComponent(document.cookie);
+
+                      if(x == "as"){
+
+
+                        window.location="index.html"
+                      }
+
+
+                      else{
+
+                         
+                          
+                        
+
+                        getcurrentuser(x);
+                       //  getpic(x);
+
+                      }
+
+                  }
+
+
+
+
+                        function getcurrentuser(a){
+              
+
+                                        $.ajax({
+                                          type: "POST",
+                                          url: "php/retrievecurrentuser.php",
+                                          dataType: "json",
+                                            data: {
+                                              a:a, 
+                                             
+                                             
+                                         
+                                            },
+                                          success: function(result){
+                                            var _res = result;
+                                            if(_res.status == 1){
+
+                                          
+                                             $("#name1").text(_res.a1 + " " + _res.a2 + " " + _res.a3);
+                                             $("#pos").text(_res.a6);
+                                             
+                                             
+                                           
+
+
+
+
+                                             
+                                            } 
+                                          }
+                                        });}
+
+
+
+
+
+
+
+$(window).on("load", getfac());
+
+
+
+   
+
+    
+function loadallrecords(){
+
+      $("#allrecords").find("tr.re-list").remove();
+      $.ajax({
+        type: "POST",
+           url: "php/electricalclearance.php",
+        dataType: "json",
+        data: {
+                
+        },
+        success: function(result){
+          if(typeof(result.status) === 'undefined')
+            $.each(result, function(val, key) {
+              $("#allrecords tr:last").after("<tr class='re-list'>" + 
+                "<td><input type='radio' name='rrec' value='" + key.clearance + "' /></td>" +
+                     "<td>" + key.buildingname+ "</td>" +
+                       "<td>" + key.dateiss+ "</td>" + 
+                     "<td>" + key.kindofinstall+ "</td>" +
+
+                   
+                     "<td>" + key.fscecno+ "</td>" +  
+                      "<td>" + key.qrnumber+ "</td>" +  
+              
+
+                
+
+                "<td></td></tr>");
+
+
+
+
+
+            });
+            var rows = $('#allrecords').find('tr').length;
+            if(rows == 1)
+              $("#allrecords tr:last").after("<tr class='re-list'><td colspan='2'>No record to display.</td></tr>");
+    
+        }
+
+      });
+    }
+
+
+
+
+   })
+
+</script>
+
+
+
+
+  </body>
+</html>
+

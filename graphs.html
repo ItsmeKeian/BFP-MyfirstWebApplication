@@ -1,0 +1,1226 @@
+
+
+
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Office of the Municipality Agricultural Services</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="fonts/flaticon.css">
+    <!-- Full Calender CSS -->
+    <link rel="stylesheet" href="css/fullcalendar.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Modernize js -->
+    <script src="js/modernizr-3.6.0.min.js"></script>
+
+ <style>
+        body{
+        zoom: 80%;    
+        }
+
+
+        .chart-container {
+    width: 900px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+.chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.chart div {
+    width: 100px;
+    background-color: #4CAF50;
+    margin: 0 5px;
+    transition: height 0.5s ease;
+}
+
+.colorful-span {
+            font-size: 16px;
+            margin: 5px;
+        }
+
+  #year-display {
+            font-size: 24px;
+           
+        }
+
+        #year-buttons {
+            text-align: center;
+        }
+
+        .button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .arrow {
+            font-size: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+
+
+
+          #farmingtype {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+            background-color: #f5f5f5;
+        }
+
+        /* Style for the dropdown arrow */
+        #farmingtype::after {
+            content: "\25BC"; /* Down arrow Unicode character */
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        /* Style for the options */
+        #farmingtype option {
+            font-size: 14px;
+            background-color: #fff;
+            color: #333;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader Start Here -->
+    <div id="preloader"></div>
+    <!-- Preloader End Here -->
+    <div id="wrapper" class="wrapper bg-ash">
+       <!-- Header Menu Area Start Here -->
+        <div class="navbar navbar-expand-md header-menu-one bg-light">
+            <div class="nav-bar-header-one">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="img/jj.png" alt="logo">
+                    </a>
+                </div>
+                 <div class="toggle-button sidebar-toggle">
+                    <button type="button" class="item-link">
+                        <span class="btn-icon-wrap">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="d-md-none mobile-nav-bar">
+               <button class="navbar-toggler pulse-animation" type="button" data-toggle="collapse" data-target="#mobile-navbar" aria-expanded="false">
+                    <i class="far fa-arrow-alt-circle-down"></i>
+                </button>
+                <button type="button" class="navbar-toggler sidebar-toggle-mobile">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="header-main-menu collapse navbar-collapse" id="mobile-navbar">
+                <ul class="navbar-nav">
+                   
+                </ul>
+              <ul class="navbar-nav">
+                    <li class="navbar-item dropdown header-admin">
+                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="admin-title">
+                                <h5 class="item-title" id="curruser1">Leodel Clamor</h5>
+                                <span id="pos">Admin</span>
+                            </div>
+                            <div class="admin-img">
+                                <img src="img/logo-small.png" alt="Admin" height="30%" width="30%">
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="item-header">
+                                <h6 class="item-title" id="curruser2">Leodel Clamor</h6>
+                            </div>
+                            <div class="item-content">
+                                <ul class="settings-list">
+                                    
+                                    <li><a href="loginform.php"><i class="flaticon-turn-off"></i>Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                   
+                   
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- Header Menu Area End Here -->
+        <!-- Page Area Start Here -->
+        <div class="dashboard-page-one">
+            <!-- Sidebar Area Start Here -->
+            <div class="sidebar-main sidebar-menu-one sidebar-expand-md sidebar-color">
+               <div class="mobile-sidebar-header d-md-none">
+                    <div class="header-logo">
+                        <a href="index.html"><img src="img/logo1.png" alt="logo"></a>
+                    </div>
+               </div>
+                <div class="sidebar-menu-content">
+                    <ul class="nav nav-sidebar-menu sidebar-toggle-view">
+                        
+
+                                <li class="nav-item">
+                            <a href="dashboard.html" class="nav-link"><i class="flaticon-dashboard"></i><span>Dashboard</span></a>
+                           
+                        </li>
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-registered"></i><span>Registration</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="farmers-form.html" class="nav-link"><i class="fas fa-angle-right"></i>Farmer</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="harvesttype-form.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Harvest Type</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="harvesttype-form.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Livestock Type</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="harvest-form.html" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Harvest</a>
+                                </li>
+                                
+                              
+                            </ul>
+                        </li>
+
+
+                        
+                      
+
+                        
+
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-archive"></i><span>Records</span></a>
+                            <ul class="nav sub-group-menu">
+                                 <li class="nav-item">
+                                    <a href="report-farmers-form.html" class="nav-link"><i class="fa fa-angle-right"></i>Farmers</a>
+                                </li>
+                               
+                                <li class="nav-item">
+                                    <a href="record-livestocks.html" class="nav-link"><i class="fas fa-angle-right"></i>Livestocks</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="record-harvests.html" class="nav-link"><i class="fas fa-angle-right"></i>Crops</a>
+                                </li>
+                               
+                              
+                            </ul>
+                        </li>
+
+                      <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-list"></i><span>Reports</span></a>
+                            <ul class="nav sub-group-menu">
+                                
+                               
+                                <li class="nav-item">
+                                    <a href="reports-livestocks.html" class="nav-link"><i class="fas fa-angle-right"></i>Livestocks</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="crops-farmers-archive.html" class="nav-link"><i class="fas fa-angle-right"></i>Crops</a>
+                                </li>
+                               
+                              
+                            </ul>
+                        </li>
+
+
+
+
+                           
+                         
+                           <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-minus"></i><span>Graphs</span></a>
+                            <ul class="nav sub-group-menu">
+                                 
+                               
+                                <li class="nav-item">
+                                    <a href="livestocks-graphs.html" class="nav-link"><i class="fas fa-angle-right"></i>Livestocks</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="graphs.html" class="nav-link"><i class="fas fa-angle-right"></i>Crops</a>
+                                </li>
+                               
+                              
+                            </ul>
+                        </li>
+
+
+
+
+                           <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-archive"></i><span>Archives</span></a>
+                            <ul class="nav sub-group-menu">
+                                 
+                               
+                                <li class="nav-item">
+                                    <a href="livestocks-farmers-archive.html" class="nav-link"><i class="fas fa-angle-right"></i>Livestocks</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="crops-farmers-archive.html" class="nav-link"><i class="fas fa-angle-right"></i>Crops</a>
+                                </li>
+                               
+                              
+                            </ul>
+                        </li>
+                       
+                       
+                      
+                        
+                   
+                       
+                        <li class="nav-item">
+                            <a href="account-settings.html" class="nav-link"><i
+                                    class="flaticon-settings"></i><span>My Account</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="loginform.php" class="nav-link"><i class="flaticon-turn-off"></i><span>Log out</span></a>
+                        </li>
+                    </ul>
+                     <br>  <br>  <br>  <br>  <br>  <br> <br>  <br>  <br>  <br>  <br>  <br>
+                </div>
+            </div>
+
+            <div class="dashboard-content-one">
+                <!-- Breadcubs Area Start Here -->
+                <div class="breadcrumbs-area">
+                    <h3>Data Visualization</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>Graphs</li>
+                    </ul>
+                </div>
+                <!-- Breadcubs Area End Here -->
+                <!-- Add New Teacher Area Start Here -->
+                <div class="card height-auto">
+                    <div class="card-body">
+                        <div class="heading-layout1">
+                            <div class="item-title">
+                                <h2>Choose Crop</h2>
+                                    <select  id = "farmingtype">
+                                      
+                                             <option value="Rice">Rice</option>
+                                             <option value="Corn">Corn</option>
+                                             <option value="Rootcrops">Rootcrops</option>
+                                              <option value="Vegetables">Vegetables</option>
+                                                                                         
+                                                            </select>
+                                                            <br>
+                                                            
+
+                                            <div id="year-display">Year: <span id="current-year"></span></div>
+                                            <div id="year-buttons">
+                                                <button class="button" onclick="previousYear()">
+                                                    <span class="arrow">&#9666;</span> Previous Year
+                                                </button>
+                                                <button class="button" onclick="nextYear()">
+                                                    Next Year <span class="arrow">&#9656;</span>
+                                                </button>
+                                            </div>
+    
+
+  <script>
+        const currentYearElement = document.getElementById("current-year");
+
+        function updateYearDisplay(year) {
+            currentYearElement.textContent = year;
+        }
+
+        function previousYear() {
+            const currentYear = parseInt(currentYearElement.textContent);
+            updateYearDisplay(currentYear - 1);
+        }
+
+        function nextYear() {
+            const currentYear = parseInt(currentYearElement.textContent);
+            updateYearDisplay(currentYear + 1);
+        }
+
+        // Initialize the year display with the current year
+        const currentYear = new Date().getFullYear();
+        updateYearDisplay(currentYear);
+    </script>
+
+    </div>
+                         
+                        </div>
+                  
+                                        <div class="chart-container">
+                                        <div class="chart" id="chart"></div>
+                                        </div>
+
+
+<h4>Legend (Unit: Kilos)</h4>
+    <span class="colorful-span" id = "janl"></span>
+    <span class="colorful-span" id = "febl"></span>
+    <span class="colorful-span" id = "marl"></span>
+    <span class="colorful-span" id = "aprl"></span>
+    <span class="colorful-span" id = "mayl"></span>
+    <span class="colorful-span" id = "junl"></span>
+    <span class="colorful-span" id = "jull"></span>
+    <span class="colorful-span" id = "augl"></span>
+    <span class="colorful-span" id = "sepl"></span>
+    <span class="colorful-span" id = "octl"></span>
+    <span class="colorful-span" id = "novl"></span>
+    <span class="colorful-span" id = "decl"></span>
+
+                                   
+        <script>
+        const colors = ["red", "blue", "green", "orange", "purple", "pink", "cyan", "yellow", "teal", "gray", "brown", "lime", "magenta"];
+        const spans = document.querySelectorAll(".colorful-span");
+
+        spans.forEach((span, index) => {
+            span.style.color = colors[index];
+        });
+    </script>                      
+
+                        
+
+                    </div>
+                </div>
+                <!-- Add New Teacher Area End Here -->
+               
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <!-- Page Area End Here -->
+    </div>
+    <!-- jquery-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Select 2 Js -->
+    <script src="js/select2.min.js"></script>
+    <!-- Date Picker Js -->
+    <script src="js/datepicker.min.js"></script>
+    <!-- Smoothscroll Js -->
+    <script src="js/jquery.smoothscroll.min.js"></script>
+    <!-- Scroll Up Js -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- Custom Js -->
+    <script src="js/main.js"></script>
+  
+  <script>
+
+
+
+
+
+        $(function () {
+
+            
+             var jand,febd, mard, aprd, mayd, jund, juld, augd, sepd, octd, novd, decd;
+         
+
+
+
+
+                $("#current-year").on('DOMSubtreeModified',function(){
+
+                      addgraph();
+                 
+
+                        });
+
+
+
+             addgraph();
+
+
+                  $("#farmingtype").on("change", function(){
+
+                                 addgraph();
+                                                         
+
+                           
+                               
+          
+                                });
+
+
+             function addgraph(){
+
+            var currentYear= $("#current-year").text();
+
+
+
+            var selectElement = document.getElementById("farmingtype");
+            var selectedOption = selectElement.options[selectElement.selectedIndex];
+            var selectedText = selectedOption.text;
+                          
+            var cr = selectedOption.text;
+          
+        
+
+
+             var a = currentYear + "-04-01";
+             var b = currentYear + "-04-30";
+
+             var c = currentYear + "-01-01";
+             var d = currentYear + "-01-31";
+
+             var e = currentYear + "-02-01";
+             var f = currentYear + "-02-29";
+
+             var g = currentYear + "-03-01";
+             var h = currentYear + "-03-31";
+
+             var i = currentYear + "-05-01";
+             var j = currentYear + "-05-31";
+
+             var k = currentYear + "-06-01";
+             var l = currentYear + "-06-30";
+
+             var m = currentYear + "-07-01";
+             var n = currentYear + "-07-30";
+
+             var o = currentYear + "-08-01";
+             var p = currentYear + "-08-31";
+
+             var q = currentYear + "-09-01";
+             var r = currentYear + "-09-30";
+
+             var s = currentYear + "-10-01";
+             var t = currentYear + "-10-31";
+
+             var u = currentYear + "-11-01";
+             var v = currentYear + "-11-31";
+
+
+             var w = currentYear + "-12-01";
+             var x = currentYear + "-12-31";
+
+                 countapr(a,b,cr);
+                 countjan(c,d,cr);
+                 countfeb(e,f,cr);
+                 countmar(g,h,cr);
+                 countmay(i,j,cr);
+                 countjun(k,l,cr);
+                 countjul(m,n,cr);
+                 countaug(o,p,cr);
+                 countsep(q,r,cr);
+                 countoct(s,t,cr);
+                 countnov(u,v,cr);
+                 countdec(w,x,cr);
+
+
+             }
+
+             
+
+
+
+
+function countdec(a,b,c){
+        
+
+      $.ajax({
+        type: "POST",
+        url: "php/countmonth.php",
+        dataType: "json",
+          data: {
+           
+           a:a,
+           b:b,
+           c:c,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+
+
+           
+            decd = _res.unid;
+             if(decd  == null){
+
+                $("#decl").text("Dec: 0");
+                updateChart();
+
+
+
+            }
+
+            else{
+                 $("#decl").text("Dec: " + decd);
+                updateChart();
+
+            }
+
+
+            
+          } 
+        }
+      });
+
+    }
+
+function countnov(a,b,c){
+        
+
+      $.ajax({
+        type: "POST",
+        url: "php/countmonth.php",
+        dataType: "json",
+          data: {
+           
+           a:a,
+           b:b,
+           c:c,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+
+
+           
+            novd = _res.unid;
+             if(novd  == null){
+
+                $("#novl").text("Nov: 0");
+                updateChart();
+
+
+
+            }
+
+            else{
+                 $("#novl").text("Nov: " + novd);
+                updateChart();
+
+            }
+
+
+            
+          } 
+        }
+      });
+
+    }
+
+function countoct(a,b,c){
+        
+
+      $.ajax({
+        type: "POST",
+        url: "php/countmonth.php",
+        dataType: "json",
+          data: {
+           
+           a:a,
+           b:b,
+           c:c,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+
+
+           
+            octd = _res.unid;
+           
+
+            if(octd  == null){
+
+                $("#octl").text("Oct: 0");
+                updateChart();
+
+
+
+            }
+
+            else{
+                 $("#octl").text("Oct: " + octd);
+                updateChart();
+
+            }
+
+
+            
+          } 
+        }
+      });
+
+    }
+
+function countsep(a,b,c){
+        
+
+      $.ajax({
+        type: "POST",
+        url: "php/countmonth.php",
+        dataType: "json",
+          data: {
+           
+           a:a,
+           b:b,
+           c:c,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+
+
+           
+            sepd = _res.unid;
+            
+
+             if(sepd  == null){
+
+                $("#sepl").text("Sep: 0");
+                updateChart();
+
+
+
+            }
+
+            else{
+                 $("#sepl").text("Sep: " + sepd);
+                updateChart();
+
+            }
+
+
+            
+          } 
+        }
+      });
+
+    }
+
+
+function countaug(a,b,c){
+        
+
+      $.ajax({
+        type: "POST",
+        url: "php/countmonth.php",
+        dataType: "json",
+          data: {
+           
+           a:a,
+           b:b,
+           c:c,
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+
+
+           
+            augd = _res.unid;
+           
+
+            if(augd  == null){
+
+                $("#augl").text("Aug: 0");
+                updateChart();
+
+
+
+            }
+
+            else{
+                 $("#augl").text("Aug: " + augd);
+                updateChart();
+
+            }
+
+
+            
+          } 
+        }
+      });
+
+    }
+
+
+function countjul(a,b,c){
+        
+
+      $.ajax({
+        type: "POST",
+        url: "php/countmonth.php",
+        dataType: "json",
+          data: {
+           
+           a:a,
+           b:b,
+           c:c,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+
+
+           
+            juld = _res.unid;
+            
+             if(juld  == null){
+
+                $("#jull").text("Jul: 0");
+                updateChart();
+
+
+
+            }
+
+            else{
+                 $("#jull").text("Jul: " + juld);
+                updateChart();
+
+            }
+
+
+            
+          } 
+        }
+      });
+
+    }
+
+function countjun(a,b,c){
+        
+
+      $.ajax({
+        type: "POST",
+        url: "php/countmonth.php",
+        dataType: "json",
+          data: {
+           
+           a:a,
+           b:b,
+           c:c,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+
+
+           
+            jund = _res.unid;
+           
+            if(jund  == null){
+
+                $("#junl").text("Jun: 0");
+                updateChart();
+
+
+
+            }
+
+            else{
+                 $("#junl").text("Jun: " + jund);
+                updateChart();
+
+            }
+
+
+            
+          } 
+        }
+      });
+
+    }
+
+
+
+function countmay(a,b,c){
+        
+
+      $.ajax({
+        type: "POST",
+        url: "php/countmonth.php",
+        dataType: "json",
+          data: {
+           
+           a:a,
+           b:b,
+           c:c,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+
+
+           
+            mayd = _res.unid;
+           
+            if(mayd  == null){
+
+                $("#mayl").text("May: 0");
+                updateChart();
+
+
+
+            }
+
+            else{
+                 $("#mayl").text("May: " + mayd);
+                updateChart();
+
+            }
+
+
+            
+          } 
+        }
+      });
+
+    }
+
+
+
+function countmar(a,b,c){
+        
+
+      $.ajax({
+        type: "POST",
+        url: "php/countmonth.php",
+        dataType: "json",
+          data: {
+           
+           a:a,
+           b:b,
+           c:c,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+
+
+           
+            mard = _res.unid;
+            if(mard  == null){
+
+                $("#marl").text("Mar: 0");
+                updateChart();
+
+
+
+            }
+
+            else{
+                 $("#marl").text("Mar: " + mard);
+                updateChart();
+
+            }
+
+
+            
+          } 
+        }
+      });
+
+    }
+
+function countfeb(a,b,c){
+        
+
+      $.ajax({
+        type: "POST",
+        url: "php/countmonth.php",
+        dataType: "json",
+          data: {
+           
+           a:a,
+           b:b,
+           c:c,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+
+
+           
+            febd = _res.unid;
+             if(febd  == null){
+
+                $("#febl").text("Feb: 0");
+                updateChart();
+
+
+
+            }
+
+            else{
+                 $("#febl").text("Feb: " + febd);
+                updateChart();
+
+            }
+
+
+            
+          } 
+        }
+      });
+
+    }
+
+          
+
+  function countjan(a,b,c){
+        
+
+      $.ajax({
+        type: "POST",
+        url: "php/countmonth.php",
+        dataType: "json",
+          data: {
+           
+           a:a,
+           b:b,
+           c:c,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+
+             jand = _res.unid;
+
+            if(jand  == null){
+
+                $("#janl").text("Jan: 0");
+                updateChart();
+
+
+
+            }
+
+            else{
+                 $("#janl").text("Jan: " + jand);
+                updateChart();
+
+            }
+
+
+           
+
+           
+
+
+            
+          } 
+        }
+      });
+
+    }
+
+
+  function countapr(a,b,c){
+        
+
+      $.ajax({
+        type: "POST",
+        url: "php/countmonth.php",
+        dataType: "json",
+          data: {
+           
+           a:a,
+           b:b,
+           c:c,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+
+
+            aprd = _res.unid;
+            if(aprd  == null){
+
+                $("#aprl").text("Apr: 0");
+                updateChart();
+
+
+
+            }
+
+            else{
+                 $("#aprl").text("Apr: " + aprd);
+                updateChart();
+
+            }
+
+
+            
+          } 
+        }
+      });
+
+    }
+
+
+
+
+
+
+
+            function updateChart() {
+            var chartContainer = document.getElementById("chart");
+
+            // Sample data and colors (you can replace this with your own data and colors)
+            var data = [jand,febd, mard, aprd, mayd, jund, juld, augd, sepd, octd, novd, decd];
+            var colors = ["red", "blue", "green", "orange", "purple", "pink", "cyan", "yellow", "teal", "gray", "brown", "lime", "magenta"];
+
+            // Clear the existing chart
+            chartContainer.innerHTML = '';
+
+            // Create bars based on data with different colors
+            for (var i = 0; i < data.length; i++) {
+                var bar = document.createElement('div');
+                bar.style.height = data[i] * 1 + 'px'; // Scaling the height (you can adjust this)
+                bar.style.backgroundColor = colors[i]; // Assign a color from the colors array
+                chartContainer.appendChild(bar);
+            }
+        }
+
+
+                                
+          
+
+
+
+            checkifloggedin();
+
+
+            function checkifloggedin(){
+
+                    var a = "1";
+                            
+                            getcurrentuser(a);
+                         
+                  }
+
+
+
+
+                        function getcurrentuser(a){
+                 
+                            
+                                        $.ajax({
+                                          type: "POST",
+                                          url: "php/retrievecurrentuser.php",
+                                          dataType: "json",
+                                            data: {
+                                              a:a, 
+                                             
+                                             
+                                         
+                                            },
+                                          success: function(result){
+                                            var _res = result;
+                                            if(_res.status == 1){
+                                          
+                                           $("#curruser1").text(_res.a1);
+                                             $("#curruser2").text(_res.a1);
+                                           $("#pos").text(_res.a2);
+                                            $("#a").val(_res.a1);
+                                            $("#b").val(_res.a2);
+                                            $("#c").val(_res.a3);
+                                            $("#d").val(_res.a4);
+                                            $("#e").val(_res.a5);
+                                          
+                                             
+                                            } 
+                                          }
+                                        });}
+
+   
+
+        
+
+
+                 
+
+               
+
+
+    
+              
+              
+              
+                 })
+    </script>
+              
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="template/assets/images/favicon.png" />
+    <title>BFP SYSTEM</title>
+    <link rel="stylesheet"  href="css/login.css">
+<link rel="shortcut icon" href="assets/images/favicon.png" />
+      <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+</head>
+<body>
+
+
+    <div class="wrapper">
+          
+
+        <div class="form-box login" id="">
+            <h2>Login</h2>
+            <form action="">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="text" id="ein" value="" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="pwd" required>
+                    <label>Password</label>
+                </div>
+                
+                <button type="submit" class="btn" id="login" onclick="login">Login</button>
+
+               
+                
+            </form>
+            </div>
+
+
+ 
+
+
+        </div>
+
+    <script src="js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- fullCalendar -->
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<!-- Page specific script -->
+<script>
+
+
+
+
+       $(function () {
+
+        document.cookie = "";
+        
+
+
+ 
+
+         $("#login").click(function (e) {
+
+                    e.preventDefault();
+
+                 var a= $("#ein").val();
+                 var b= $("#pwd").val();
+
+                        checkuser(a,b);    
+                          });
+
+
+
+             function  checkuser(username, password){
+
+            
+                                jQuery.ajax({
+                                url: 'php/checkuser.php',
+                                type: 'POST',
+                                dataType: 'json',
+                                data: {
+                                un: username,
+                                pw: password,
+       
+                                    },
+                                            success: function(result) {
+                                                    var _res = result;
+                                                          
+                                                if(_res.status == 1){
+
+                                              
+                           
+                                                    document.cookie = username;      
+                                                    window.location = "dashboard.html"
+                                                   
+                                                        } 
+      
+                                                  else {
+                                                          alert("Login failed. Please try again.");
+                                                  }
+                                                  
+                                       }
+
+                                    });
+
+                                  }
+
+
+ });
+
+ 
+</script>
+
+</body>
+
+</html>

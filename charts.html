@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BFP SYSTEM</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+     
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End Plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+     
+
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a href="dashboard.html"><img style="width:80px; height: 75px; margin-left: -55px; border-radius: 27px; margin-top: 10px;"  src="logo.jpg" alt="BFP" /></a>
+          
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="123.png" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                   <h5 class="mb-0 font-weight-normal">Administrator</h5>
+                  
+                </div>
+              </div>
+             
+             
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Navigation</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="dashboard.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items"  >
+            <a class="nav-link" data-toggle="collapse" href="#forms" aria-expanded="false" aria-controls="forms">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Forms</span>
+              <i class="menu-arrow"></i>
+            </a>
+           <div class="collapse" id="forms" > 
+
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="buildingpermit.html">Evaluation Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="establishment.html">Inspection Certificate</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="electricalclearance.html">Electrical Clearance</a></li>   
+                <li class="nav-item"> <a class="nav-link" href="occupancyform.html">Occupancy Clearance</a></li>
+               
+                <li class="nav-item"> <a class="nav-link" href="importexcelfile.html">Import Excel File</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#files" aria-expanded="false" aria-controls="files">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-bar"></i>
+              </span>
+              <span class="menu-title">Records</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="files">
+              <ul class="nav flex-column sub-menu">
+                 <li class="nav-item"> <a class="nav-link" href="buildingpermitprofile.html">Evaluation Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="establishmentprofile.html">Inspection Certificate</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="electricalprofile.html">Electrical Clearance</a></li>                
+                <li class="nav-item"> <a class="nav-link" href="occupancyprofile.html"> Occupancy Clearance</a></li>
+               
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#analytics" aria-expanded="false" aria-controls="analytics">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Data Analytics</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="analytics">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="maps.html">Map</a></li>
+                <li class="nav-item"> <a class="nav-link" href="charts.html">Charts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="lookerchart.html">Looker Chart</a></li>
+               
+               
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#archive" aria-expanded="false" aria-controls="archive">
+              <span class="menu-icon">
+                 <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">Reports</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="archive">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="listofbuildingpermits.html">Evaluation Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="listofestablishments.html">Inspection Certificate</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="listofclearance.html">Electrical Clearance</a></li>              
+                <li class="nav-item"> <a class="nav-link" href="listofoccupancy.html">Occupancy Clearance</a></li>
+                
+               
+               
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <span class="menu-icon">
+                <i class="mdi mdi-security"></i>
+              </span>
+              <span class="menu-title">Archives</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+               <li class="nav-item"> <a class="nav-link" href="arcevaluationclearance.html"> Evaluation Clearance </a></li>
+                <li class="nav-item"> <a class="nav-link" href="arcinspectioncertificate.html"> Inspection Certificate </a></li>
+                <li class="nav-item"> <a class="nav-link" href="arcelectricalclearances.html"> Electrical Clearance </a></li>         
+                <li class="nav-item"> <a class="nav-link" href="arcoccupancyclearance.html"> Occupancy Clearance </a></li>
+                
+              </ul>
+            </div>
+          </li>
+
+         
+
+
+        
+          
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+           
+          
+          
+         
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+         
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+             
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+             
+              
+              
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="123.png" alt="">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name" id="name1">admin</p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                  <span style="margin-top: -20px; margin-left:90px" id="pos"></span>
+                </a>
+                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item" href="register.html">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Account</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item" href="index.html">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+
+        <!-- partial:partials/_navbar.html -->
+        
+
+<style>
+        body{
+        zoom: 80%;    
+        }
+
+
+       .chart-container {
+    width: 1200px;
+    margin: 20px auto;
+    border: solid 1px white;
+    border-radius: 15px;
+}
+
+.chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 0px;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+}
+
+.y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+.y-tick {
+    margin-bottom: 20px;
+}
+
+.chart div {
+    width: 130px;
+    
+    margin-bottom: -4px;
+    transition: height 0.5s ease;
+    border-radius: 7px 7px 0 0;
+    border: none;
+}
+
+.colorful-span {
+            font-size: 16px;
+            margin: 5px;
+        }
+
+  #year-display {
+            font-size: 24px;
+           
+        }
+
+        #year-buttons {
+            text-align: center;
+        }
+
+        .button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .arrow {
+            font-size: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+
+
+
+      
+        /* Style for the dropdown arrow */
+     
+
+        /* Style for the options */
+      
+
+       
+    
+
+    .day-labels {
+            margin-top: -20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0px; /* Adjust for better alignment */
+            margin-top: 0;
+        }
+
+        .day-label {
+          display: flex;
+          align-self: flex-end;
+          flex-direction: column-reverse;
+            color: white;
+            padding-top: -10px;
+            font-size: 12px;
+            margin-bottom: 1px
+        }
+
+
+        .line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: -10px;
+}
+
+.measure-table {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.measure-row {
+    display: flex;
+    align-items: center;
+}
+
+.measure-label {
+    margin-right: 10px;
+}
+
+.measure-value {
+    width: 40px;
+    height: 20px;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar-label {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+   /* Push the label to the bottom within the container */
+}
+
+
+
+    </style>
+
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            
+            <div class="row">
+              
+             
+              <div class="col-12 grid-margin stretch-card">
+
+
+
+                <div class="card">
+       
+
+                  <div class="card-body" id="container">
+
+        
+
+                      <div class="template-demo">
+                      <div class="dropdown">
+
+                          <select class="form-control" id = "optionmenu">
+                                                              
+                                                                <option value="1">Evaluation Clearance</option>
+                                                                <option value="2">Inspection Certificate</option>
+                                                                <option value="3">Electrical Clearance</option>
+                                                                <option value="4">Occupancy Clearance</option>
+                                                        </select> 
+                        
+                      </div>
+                      <div class="dropdown">
+                          <select class="form-control" id = "optmenu"> </select>  
+                      </div>
+                       
+                     
+
+                      
+                      
+                    </div>
+
+                      <br>
+                   
+                    
+
+
+
+                      
+                     From:
+                    <input
+                      id="from"
+                      placeholder="Search here"
+                      type="date"
+                      dateFormat = "yy-mm-dd"
+                      class="required form-control"
+                    />
+
+                  <br>
+To:
+                    <input
+                      id="to"
+                      placeholder="Search here"
+                      type="date"
+                      class="required form-control"
+                    />
+                
+                    
+
+               <br>
+                  
+    <button type="button" id ="viewgraph" class="btn btn-inverse-secondary btn-fw">View Graph</button>
+
+                             <div class="chart-container">
+    <div class="y-axis" id="y-axis">
+        <!-- Your Y-axis ticks -->
+    </div>
+    <div class="chart" id="chart"></div>
+    
+    <div class="measure-table" id="measure-table">
+        <div class="measure-row">
+            <div class="measure-label" id="lab1"></div>
+            
+        </div>
+        <div class="measure-row">
+            <div class="measure-label" id="lab2"></div>
+            
+        </div>
+        <div class="measure-row">
+            <div class="measure-label" id="lab3"></div>
+          
+        </div>
+        <div class="measure-row">
+           
+        </div>
+    </div>
+</div>
+
+                   
+                </div>
+              </div>
+
+              
+            
+          <!-- partial -->
+        </div>
+
+        
+              
+            
+          <!-- partial -->
+       
+            
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+
+
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom js for this page -->
+    
+    <!-- End custom js for this page -->
+  <<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- fullCalendar -->
+<script src="bower_components/moment/moment.js"></script>
+
+<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+
+    <!-- End custom js for this page -->
+
+<script>
+
+
+
+$(function () {
+
+
+  var a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22;
+
+
+ 
+    function updateChart3(a, b, c) {
+    var chartContainer = document.getElementById("chart");
+    var yAxisContainer = document.getElementById("y-axis");
+
+    // Sample data (you can replace this with your own data)
+    var data = [a, b, c];
+    var labels = ["New", "Renewal", "Not Paid"];
+
+    // Clear the existing chart and Y-axis
+    chartContainer.innerHTML = '';
+    yAxisContainer.innerHTML = '';
+
+    // Create Y-axis scale
+    var yAxisValues = [31, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1];
+    for (var i = 0; i < yAxisValues.length; i++) {
+        var yAxisTick = document.createElement('div');
+        yAxisTick.classList.add('y-tick');
+        yAxisTick.textContent = yAxisValues[i];
+        yAxisContainer.appendChild(yAxisTick);
+    }
+
+    // Create bars based on data with different colors and add labels/count
+    for (var i = 0; i < data.length; i++) {
+        var barContainer = document.createElement('div');
+        barContainer.classList.add('bar-container'); // Optional: Add a class for styling
+
+        var bar = document.createElement('div');
+        bar.style.height = data[i] * 15 + 'px'; // Scaling the height (you can adjust this)
+        bar.style.backgroundColor = getRandomColor(); // Assign a random color
+        barContainer.appendChild(bar);
+
+        // Add label and count information
+        var label = document.createElement('div');
+        label.classList.add('bar-label');
+        label.textContent = labels[i] + ": " + data[i];
+        barContainer.appendChild(label);
+
+        chartContainer.appendChild(barContainer);
+    }
+}
+
+
+
+   function updateChart2(a, b, c) {
+    var chartContainer = document.getElementById("chart");
+    var yAxisContainer = document.getElementById("y-axis");
+
+    // Sample data (you can replace this with your own data)
+    var data = [a, b, c];
+    var labels = ["NTCV", "Abmnt Order", "Clsue/Stpage"];
+
+    // Clear the existing chart and Y-axis
+    chartContainer.innerHTML = '';
+    yAxisContainer.innerHTML = '';
+
+    // Create Y-axis scale
+    var yAxisValues = [31, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1];
+    for (var i = 0; i < yAxisValues.length; i++) {
+        var yAxisTick = document.createElement('div');
+        yAxisTick.classList.add('y-tick');
+        yAxisTick.textContent = yAxisValues[i];
+        yAxisContainer.appendChild(yAxisTick);
+    }
+
+    // Create bars based on data with different colors and add labels/count
+    for (var i = 0; i < data.length; i++) {
+        var barContainer = document.createElement('div');
+        barContainer.classList.add('bar-container'); // Optional: Add a class for styling
+
+        var bar = document.createElement('div');
+        bar.style.height = data[i] * 15 + 'px'; // Scaling the height (you can adjust this)
+        bar.style.backgroundColor = getRandomColor(); // Assign a random color
+        barContainer.appendChild(bar);
+
+        // Add label and count information
+        var label = document.createElement('div');
+        label.classList.add('bar-label');
+        label.textContent = labels[i] + ": " + data[i];
+        barContainer.appendChild(label);
+
+        chartContainer.appendChild(barContainer);
+    }
+}
+
+
+
+      function updateChart(a, b, c) {
+    var chartContainer = document.getElementById("chart");
+    var yAxisContainer = document.getElementById("y-axis");
+
+    // Sample data (you can replace this with your own data)
+    var data = [a, b, c];
+    var labels = ["constructed", "Renovated", "modified"];
+
+    // Clear the existing chart and Y-axis
+    chartContainer.innerHTML = '';
+    yAxisContainer.innerHTML = '';
+
+    // Create Y-axis scale
+    var yAxisValues = [31, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1];
+    for (var i = 0; i < yAxisValues.length; i++) {
+        var yAxisTick = document.createElement('div');
+        yAxisTick.classList.add('y-tick');
+        yAxisTick.textContent = yAxisValues[i];
+        yAxisContainer.appendChild(yAxisTick);
+    }
+
+    // Create bars based on data with different colors and add labels/count
+    for (var i = 0; i < data.length; i++) {
+        var barContainer = document.createElement('div');
+        barContainer.classList.add('bar-container'); // Optional: Add a class for styling
+
+        var bar = document.createElement('div');
+        bar.style.height = data[i] * 15 + 'px'; // Scaling the height (you can adjust this)
+        bar.style.backgroundColor = getRandomColor(); // Assign a random color
+        barContainer.appendChild(bar);
+
+        // Add label and count information
+        var label = document.createElement('div');
+        label.classList.add('bar-label');
+        label.textContent = labels[i] + ": " + data[i];
+        barContainer.appendChild(label);
+
+        chartContainer.appendChild(barContainer);
+    }
+}
+
+
+
+// Function to generate a random color
+function getRandomColor() {
+    return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+
+
+
+
+
+
+
+function updateChart1(a, b, c,d ) {
+    var chartContainer = document.getElementById("chart");
+    var yAxisContainer = document.getElementById("y-axis");
+
+    // Sample data (you can replace this with your own data)
+    var data = [a, b, c,d ];
+    var labels = ["New", "Existing", "Additional", "Remodel"];
+
+    // Clear the existing chart and Y-axis
+    chartContainer.innerHTML = '';
+    yAxisContainer.innerHTML = '';
+
+    // Create Y-axis scale
+    var yAxisValues = [31, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1];
+    for (var i = 0; i < yAxisValues.length; i++) {
+        var yAxisTick = document.createElement('div');
+        yAxisTick.classList.add('y-tick');
+        yAxisTick.textContent = yAxisValues[i];
+        yAxisContainer.appendChild(yAxisTick);
+    }
+
+    // Create bars based on data with different colors and add labels/count
+    for (var i = 0; i < data.length; i++) {
+        var barContainer = document.createElement('div');
+        barContainer.classList.add('bar-container'); // Optional: Add a class for styling
+
+        var bar = document.createElement('div');
+        bar.style.height = data[i] * 15 + 'px'; // Scaling the height (you can adjust this)
+        bar.style.backgroundColor = getRandomColor(); // Assign a random color
+        barContainer.appendChild(bar);
+
+        // Add label and count information
+        var label = document.createElement('div');
+        label.classList.add('bar-label');
+        label.textContent = labels[i] + ": " + data[i];
+        barContainer.appendChild(label);
+
+        chartContainer.appendChild(barContainer);
+    }
+}
+
+
+
+   function count1(a,b,c){
+
+
+      var type = "Constructed";
+
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           a1 = _res.unid;
+
+
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+      function count2(a,b,c){
+
+
+      var type = "Renovated";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           a2 = _res.unid;
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+      function count3(a,b,c){
+
+
+      var type = "Modified";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+            a3 = _res.unid;
+             
+              updateChart(a1,a2,a3);
+
+            
+          } 
+        }
+      });
+
+    }
+
+    function count4(a,b,c){
+
+
+      var type = "Notice to Correct Violation (NTCV)";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a4 = _res.unid;
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+    function count5(a,b,c){
+
+
+      var type = "Closure/Stoppage";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a5 = _res.unid;
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+    function count6(a,b,c){
+
+
+      var type = "Abatement Order";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a6 = _res.unid;
+
+
+             updateChart2(a4,a5,a6);
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+     function count7(a,b,c){
+
+
+      var type = "Constructed";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a7 = _res.unid;
+            
+            
+          } 
+        }
+      });
+
+    }
+
+    function count8(a,b,c){
+
+
+      var type = "Renovated";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a8 = _res.unid;
+             
+
+            
+          } 
+        }
+      });
+
+    }
+    function count9(a,b,c){
+
+
+      var type = "Modified";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a9 = _res.unid;
+
+             updateChart(a7,a8,a9);
+             
+
+            
+          } 
+        }
+      });
+
+    }
+    function count10(a,b,c){
+
+
+      var type = "Notice to Correct Violation (NTCV)";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a10 = _res.unid;
+             
+
+            
+          } 
+        }
+      });
+
+    }
+    function count11(a,b,c){
+
+
+      var type = "Abatement Order";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a11 = _res.unid;
+             
+
+            
+          } 
+        }
+      });
+
+    }
+    function count12(a,b,c){
+
+
+      var type = "Closure/Stoppage";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a12 = _res.unid;
+             
+
+             updateChart2(a10,a11,a12);
+
+            
+          } 
+        }
+      });
+
+    }
+
+      function count13(a,b,c){
+
+
+      var type = "New";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a13 = _res.unid;
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+     function count14(a,b,c){
+
+
+      var type = "Existing";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a14 = _res.unid;
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+     function count15(a,b,c){
+
+
+      var type = "Additional";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a15 = _res.unid;
+
+             
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+     function count16(a,b,c){
+
+
+      var type = "Remodel";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a16 = _res.unid;
+
+
+             updateChart1(a13,a14,a15,a16);
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+
+
+
+     function count17(a,b,c){
+
+
+      var type = "Notice to Correct Violation (NTCV)";
+
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a17 = _res.unid;
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+      function count18(a,b,c){
+
+
+      var type = "Abatement Order";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+            a18 = _res.unid;
+
+
+            
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+      function count19(a,b,c){
+
+
+      var type = "Closure/Stoppage";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a19 = _res.unid;
+
+             updateChart2(a17,a18,a19);
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+    function count20(a,b,c){
+
+
+      var type = "New";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a20 = _res.unid;
+            
+
+            
+          } 
+        }
+      });
+
+    }
+
+    function count21(a,b,c){
+
+
+      var type = "Renewal";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a21 = _res.unid;
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+    function count22(a,b,c){
+
+
+      var type = "Not paid";
+    
+
+  
+
+      $.ajax({
+        type: "POST",
+        url: "php/countgraph.php",
+        dataType: "json",
+          data: {
+            a:a,
+            b:b,
+            c:c,
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+           
+             a22 = _res.unid;
+
+             updateChart3(a20,a21,a22);
+             
+
+            
+          } 
+        }
+      });
+
+    }
+
+  function1();
+  
+  
+
+
+  $("#viewgraph").click(function (e) {
+
+                    e.preventDefault();
+
+                          var point;
+
+                          var selectElement = document.getElementById("optionmenu");
+                          var selectedOption = selectElement.options[selectElement.selectedIndex];
+                          var selectedText = selectedOption.text;
+
+                          var a = selectedOption.text;
+                     
+
+                          var selectElement = document.getElementById("optmenu");
+                          var selectedOption = selectElement.options[selectElement.selectedIndex];
+                          var selectedText = selectedOption.text;
+
+                          var b = selectedOption.text;
+
+
+                          var fromd= $("#from").val();
+                          var tod= $("#to").val();
+                        
+
+
+
+                            if(a=="Evaluation Clearance"){
+
+                                  if(b == "Status of Establishment"){
+
+                                    point ="statstab";
+
+                                   count1(fromd,tod,point);
+                                   count2(fromd,tod,point);
+                                   count3(fromd,tod,point);
+
+
+
+                                  }
+
+
+                                   else if(b == "Status of Application"){
+
+                                    point ="statappli";
+                                  
+
+                                   count4(fromd,tod,point);
+                                   count5(fromd,tod,point);
+                                   count6(fromd,tod,point);
+
+                                  }
+
+
+
+
+
+                            }
+
+
+                             if(a=="Inspection Certificate"){
+
+                                  if(b == "Status of Establishment"){
+
+                                    point ="statstab";
+
+                                   count7(fromd,tod,point);
+                                   count8(fromd,tod,point);
+                                   count9(fromd,tod,point);
+
+
+
+                                  }
+
+
+                                   else if(b == "Status of Application"){
+
+                                    point ="statappli";
+                                  
+
+                                   count10(fromd,tod,point);
+                                   count11(fromd,tod,point);
+                                   count12(fromd,tod,point);
+
+                                  }
+
+
+
+
+
+                            }
+
+                             if(a=="Electrical Clearance"){
+
+                                  if(b == "Kind of Installation"){
+
+                                    point ="kindofinstall";
+
+                                    count13(fromd,tod,point);
+                                    count14(fromd,tod,point);
+                                    count15(fromd,tod,point);
+                                    count16(fromd,tod,point);
+                                  
+
+
+
+                                  }
+
+
+                                  
+
+
+
+
+
+                            }
+
+
+                             if(a=="Occupancy Clearance"){
+
+                                  if(b == "Status of Application"){
+
+                                    point ="statapplication";
+
+                                   count17(fromd,tod,point);
+                                   count18(fromd,tod,point);
+                                   count19(fromd,tod,point);
+
+
+
+                                  }
+
+
+                                   else if(b == "Type of Application"){
+
+                                    point ="typeofapplication";
+                                  
+
+                                   count20(fromd,tod,point);
+                                   count21(fromd,tod,point);
+                                   count22(fromd,tod,point);
+
+                                  }
+
+
+
+
+
+                            }
+                        
+
+
+                            
+                          });
+  
+
+   $("#optionmenu").on("change", function(){
+
+              cleartracks();
+
+                          var selectElement = document.getElementById("optionmenu");
+                          var selectedOption = selectElement.options[selectElement.selectedIndex];
+                          var selectedText = selectedOption.text;
+
+                            var ab = selectedText;
+
+
+                            if (ab =="Evaluation Clearance"){
+                                function1();
+                            
+                            }
+
+                             else if (ab=="Inspection Certificate"){
+
+                                function2();
+                            }
+
+                            else if (ab=="Electrical Clearance"){
+
+                                  function3();
+                            }
+
+                               else if (ab=="Occupancy Clearance"){
+
+                                 function4();
+                            }
+
+
+                               
+          
+                                });
+
+
+      function function1() {
+           
+                                var selectElement = document.getElementById("optmenu");
+                                var newOption = document.createElement("option");
+                                newOption.value = "option1"; 
+                                newOption.text = "Status of Establishment"; 
+                                selectElement.appendChild(newOption);
+
+
+                                var newOption2 = document.createElement("option");
+                                newOption2.value = "option2";
+                                newOption2.text = "Status of Application";
+                                selectElement.appendChild(newOption2);
+
+
+
+            
+                              
+        }
+
+        function function2() {
+           
+                                var selectElement = document.getElementById("optmenu");
+                                var newOption = document.createElement("option");
+                                newOption.value = "option1"; 
+                                newOption.text = "Status of Establishment"; 
+                                selectElement.appendChild(newOption);
+
+
+                                var newOption2 = document.createElement("option");
+                                newOption2.value = "option2";
+                                newOption2.text = "Status of Application";
+                                selectElement.appendChild(newOption2);
+
+
+
+            
+                              
+        }
+
+         function function3() {
+           
+                                var selectElement = document.getElementById("optmenu");
+                                var newOption = document.createElement("option");
+                                newOption.value = "option1"; 
+                                newOption.text = "Kind of Installation"; 
+                                selectElement.appendChild(newOption);
+
+
+                                
+
+
+
+            
+                              
+        }
+
+         function function4() {
+           
+                                var selectElement = document.getElementById("optmenu");
+                                var newOption = document.createElement("option");
+                                newOption.value = "option1"; 
+                                newOption.text = "Status of Application"; 
+                                selectElement.appendChild(newOption);
+
+
+                                var newOption2 = document.createElement("option");
+                                newOption2.value = "option2";
+                                newOption2.text = "Type of Application";
+                                selectElement.appendChild(newOption2);
+
+            
+                              
+        }
+
+                         
+         
+
+
+
+
+
+
+
+   function cleartracks(){
+                          var select = document.getElementById("optmenu"),
+                          length = select.options.length;
+                          while(length--){
+                            select.remove(length);
+                                  }
+                                } 
+
+
+
+
+
+
+
+
+function getfac(){
+
+                
+      let x = decodeURIComponent(document.cookie);
+
+                      if(x == "as"){
+
+
+                        window.location="index.html"
+                      }
+
+
+                      else{
+
+                         
+                          
+                        
+
+                        getcurrentuser(x);
+                       //  getpic(x);
+
+                      }
+
+                  }
+
+
+
+
+                        function getcurrentuser(a){
+              
+
+                                        $.ajax({
+                                          type: "POST",
+                                          url: "php/retrievecurrentuser.php",
+                                          dataType: "json",
+                                            data: {
+                                              a:a, 
+                                             
+                                             
+                                         
+                                            },
+                                          success: function(result){
+                                            var _res = result;
+                                            if(_res.status == 1){
+
+                                             
+                                          
+                                             
+                                             $("#name1").text(_res.a1 + " " + _res.a2 + " " + _res.a3);
+                                             $("#pos").text(_res.a6);
+                                             
+                                           
+
+
+
+
+                                             
+                                            } 
+                                          }
+                                        });}
+
+
+
+
+
+
+
+$(window).on("load", getfac());
+
+
+
+
+  
+  
+
+   })
+
+</script>
+
+
+
+
+  </body>
+</html>
+
+
+
+
+

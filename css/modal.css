@@ -1,0 +1,73 @@
+
+
+
+.modal .modal-dialog .modal-content {
+    margin-left: 220px;
+    align-self: center;
+    width: 1000px;
+    color: white;
+    background-color: #191c24;
+  border: none;
+}
+.modal .modal-dialog .modal-content .modal-header {
+  padding: 15px 20px;
+  align-items: center;
+}
+.modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-weight: 500;
+}
+.modal .modal-dialog .modal-content .modal-header .close {
+  font-size: 24px;
+}
+.modal .modal-dialog .modal-content .modal-header .close:focus {
+  outline: none;
+}
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 20px;
+}
+.modal .modal-dialog .modal-content .modal-footer {
+  padding: 15px 20px;
+}
+.modal .modal-dialog .modal-content .modal-footer .footer-btn {
+  cursor: pointer;
+  font-size: 14px;
+  color: #black;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 15px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.modal .modal-dialog .modal-content .modal-footer .footer-btn:hover {
+  background-color: #042954;
+  color: white;
+}
+.modal .modal-dialog .modal-content .modal-footer .footer-btn:focus {
+  outline: none;
+}
+.modal-trigger {
+  cursor: pointer;
+  font-weight: 500;
+  color: #ffffff;
+  border: none;
+  background-color: #0e56a9;
+  border-radius: 4px;
+  padding: 12px 28px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.modal-trigger:hover {
+  background-color: white;
+}
+.modal-trigger:focus {
+  outline: none;
+}
+

@@ -1,0 +1,7 @@
+@media print {
+  /* Define the page size (e.g., 8.5 x 14 inches for a legal-sized page) */
+  @page {
+    size: 8.5in 14in;
+    /* You can also set margins if needed */
+    margin: 0.5in;
+  }

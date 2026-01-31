@@ -1,0 +1,569 @@
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 5px;
+  
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+
+
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+
+.para{
+	font-size: 15px;
+	color: black;
+	margin: 20px 0 0 0;
+}
+
+.depar {
+	
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.bureau {
+	color: #151B54;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.bureau1 {
+	color: #151B54;
+	font-weight: 500;
+	font-size: 13px;
+}
+
+.fire {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.fsic {
+	float: left;
+	margin-left: 120px;
+	font-size: 15px;
+	color: red;
+	
+}
+.fsic1 {
+	float: left;
+	margin-bottom: 0px;
+	margin-left: 120px;
+	font-size: 15px;
+	color: black;
+	font-weight: bold;
+	
+}
+
+
+.date1 {
+	float: right;
+	margin-right: 100px;
+		font-size: 15px;
+	color: black;
+	font-weight: 400 ;
+	
+}
+
+
+.date2 {
+	float: right;
+	margin-right: 100px;
+		font-size: 15px;
+	color: black;
+	font-weight: 400 ;
+	
+}
+
+.date {
+	float: right;
+	margin-right: 120px;
+		font-size: 15px;
+	color: black;
+	font-weight: 500 ;
+	
+}
+.date span {
+	font-size: 12px;
+
+}
+
+.date1 {
+	float: right;
+	margin-right: 123px;
+		font-size: 11px;
+	color: black;
+	font-weight: 500 ;
+	
+}
+
+
+.fsafety1 {
+	color: black;
+	font-size: 33px;
+	color: #2B3856;
+	font-weight: 500 ;
+	text-align: center;
+
+}
+
+.fsafety {
+	color: black;
+	font-size: 43px;
+	color: #151B54;
+	font-weight: bolder ;
+	text-align: center;
+
+}
+
+.checkboxes label {
+	margin-left: 420px;
+color: #151B54;
+  display: block;
+  font-size: 13px;
+}
+.checkboxes input {
+
+  vertical-align: middle;
+}
+.checkboxes label span {
+  vertical-align: middle;
+  width: 200px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: 12px;
+  position: absolute;
+}
+
+.line {
+	margin-left: 358px;
+	width: 585px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: -5px;
+  position: absolute;
+}
+.line1 {
+	margin-left: 225px;
+	width: 718px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: -6px;
+  position: absolute;
+}
+.line2 {
+	margin-left: 180px;
+	width: 763px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: -5px;
+  position: absolute;
+}
+
+.line3 {
+	margin-left: 669px;
+	width: 154px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: -5px;
+  position: absolute;
+}
+
+
+.line7 {
+	margin-left: 498px;
+	width: 50px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: -5px;
+  position: absolute;
+}
+.line8 {
+	margin-left: 208px;
+	width: 145px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: -5px;
+  position: absolute;
+}
+.line9 {
+	margin-left: 735px;
+	width: 38px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: -5px;
+  position: absolute;
+}
+
+
+
+.spandesign {
+	margin-left: 330px;
+	width: 465px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: 0px;
+  position: absolute;
+}
+.spandesign1 {
+	margin-left: 330px;
+	width: 465px;
+  border-radius: 1px;
+  height: 1px;
+  background: #151B54;
+  margin-top: 0px;
+  position: absolute;
+}
+
+
+
+ {
+	margin-left: 280px;
+	width: 600px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: 25px;
+  position: absolute;
+}
+
+
+.span {
+	margin-left: 280px;
+	width: 600px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: 25px;
+  position: absolute;
+}
+
+
+
+.span1 {
+	margin-left: -45px;
+	margin-bottom: 0px;
+	width: 260px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: 5px;
+  position: absolute;
+}
+.span2 {
+	margin-left: -78px;
+	margin-bottom: 0px;
+	width: 260px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.span3 {
+	margin-left: -25px;
+	margin-bottom: 0px;
+	width: 260px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.span4 {
+	margin-left: -88px;
+	margin-bottom: 0px;
+	width: 260px;
+  border-radius: 2px;
+  height: 1px;
+  background: #151B54;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.fees {
+	 
+	 vertical-align: middle;
+	 margin: -65px 0px 0px 120px;
+	font-weight: normal;
+}
+
+.fees1 {
+	font-weight: normal;
+	margin: 0px 0px 0px 120px;
+}
+
+.fees2 {
+	font-weight: normal;
+	margin: 0px 0px 0px 120px;
+}
+
+center p i {
+	color: black;
+	font-weight: 500;
+	font-size: 15px;
+	margin-bottom: 0px;
+}
+
+
+.foot{
+	background: #ADDFFF;
+	padding-left: 10px;
+ 	margin-right: 930px;
+	border-width: 200;
+	font-size: 28px;
+	color: black;
+	margin-top: -20px;
+	margin-bottom: -29px;
+	margin-left: -25px;
+	border: solid 3px black;
+
+}
+
+
+h2{
+	color: black;
+	font-weight: 500;
+	margin-top: 0px;
+}
+
+h3{
+	margin-top: -10px;
+	color: black;
+	font-size: 26px;
+	color: #2B3856;
+	font-weight: 500 ;
+	text-align: center;
+
+}
+
+h4{
+	color: black;
+	font-size: 14px;
+	margin-top: -18px;
+	margin-left: 30px;
+}
+
+center p{
+	color: red;
+	font-weight: 500;
+}
+
+center h5{
+
+	color: black;
+	font-weight: 500;
+	font-size: 25px;
+}
+
+b{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.note {
+	
+	text-align: center;
+	font-size: 11px;
+}
+
+.distribution{
+	font-size: 8px;
+	
+	margin: -10px 0px -05px 30px;
+}
+
+
+
+.whom {
+	font-size: 12px;
+	color: black;
+	margin-left: 100px;
+}
+
+h6 {
+	margin: 5px 0 2px 160px;
+	color: black;
+	font-weight: normal ;
+}
+
+.label1 {
+	text-align: center;
+	color: black;
+	font-weight: normal;
+	margin: 1px 0 0 480px;
+	font-size: 15px;
+}
+
+.label2 {
+	font-size: 15px;
+	text-align: center;
+	color: black;
+	font-weight: normal;
+	margin: 1px 0 0 450px;
+}
+.label3 {
+	font-size: 15px;
+	text-align: center;
+	color: black;
+	font-weight: normal;
+	margin: -10px 0 0 530px;
+}
+.label4 {
+	text-align: center;
+	color: black;
+	font-weight: 300;
+	font: italic;
+	margin: 2px 0 0 520px;
+}
+.label5 {
+	margin-top: -50px;
+	margin-left: 780px;
+	
+	text-align: right;
+	color: black;
+	font-weight: 400;
+}
+.label6 {
+	margin-top: 2px;
+	margin-left: 800px;
+	
+	text-align: right;
+	color: black;
+	font-weight: 400;
+}
+.label7{
+	margin-top: -10px;
+	margin-left: 760px;
+	
+	text-align: right;
+	color: black;
+	font-weight: 400;
+}
+
+.labe{
+	margin: 0px 0px 0px 0px;
+	color: black;
+	font-weight: normal;
+
+}
+.parag {
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	color: #0000CD;
+	font-weight: 450;
+}
+
+.par1 {
+	text-align: center;
+	margin: 0px 0px 0px 90px;
+	color: #0000CD;
+	font-weight: 450;
+}
+
+.par2 {
+	text-align: center;
+	margin: 0px 0px 0px 270px;
+	color: #0000CD;
+	font-weight: 450;
+}
+.par3 {
+	text-align: center;
+	margin: 0px 0px 0px 260px;
+	color: #0000CD;
+	font-weight: 450;
+}
+
+.par4 {
+	text-align: center;
+	margin: 0px 0px 0px 60px;
+	color: #0000CD;
+	font-weight: 450;
+}
+.par5 {
+	
+	margin: 0px 0px 0px 10px;
+	color: #0000CD;
+	font-weight: 450;
+}
+
+
+
+
+
+.validity {
+	font-weight: normal;
+	margin-left: 180px;
+}
+.validity span{
+	font-weight: bold;
+}
+
+ 
+
+ .bfplogo {
+width: 90px;
+margin: 15px 100px 0 0 ;
+float: right;
+flex: 1;
+}
+
+.dilg {
+	width: 90px;
+	float: left;
+	flex: 1;
+	margin: 15px 0 0 100px;
+}
+
+
+.btnprint {
+	margin: -250px 0 0 10px;
+	width: 100px;
+	height: 35px;
+	color: black;
+	font-weight: 400;
+	border-radius: 3px;
+	background: #87AFC7;
+	cursor: pointer;
+}
+.btnprint:hover{
+	color: white;
+	background: transparent;
+}
+

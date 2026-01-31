@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BFP SYSTEM</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    
+    <link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a href="dashboard.html"><img style="width:80px; height: 75px; margin-left: -55px; border-radius: 27px; margin-top: 10px;"  src="logo.jpg" alt="BFP" /></a>
+          
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="123.png" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                 <h5 class="mb-0 font-weight-normal">Administrator</h5>
+                  
+                </div>
+              </div>
+             
+             
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Navigation</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="dashboard.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items"  >
+            <a class="nav-link" data-toggle="collapse" href="#forms" aria-expanded="false" aria-controls="forms">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Forms</span>
+              <i class="menu-arrow"></i>
+            </a>
+           <div class="collapse" id="forms" > 
+
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="buildingpermit.html">Evaluation Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="establishment.html">Inspection Certificate</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="electricalclearance.html">Electrical Clearance</a></li>   
+                <li class="nav-item"> <a class="nav-link" href="occupancyform.html">Occupancy Clearance</a></li>
+                
+                <li class="nav-item"> <a class="nav-link" href="importexcelfile.html">Import Excel File</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#files" aria-expanded="false" aria-controls="files">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-bar"></i>
+              </span>
+              <span class="menu-title">Records</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="files">
+              <ul class="nav flex-column sub-menu">
+                 <li class="nav-item"> <a class="nav-link" href="buildingpermitprofile.html">Evaluation Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="establishmentprofile.html">Inspection Certificate</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="electricalprofile.html">Electrical Clearance</a></li>                
+                <li class="nav-item"> <a class="nav-link" href="occupancyprofile.html"> Occupancy Clearance</a></li>
+               
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#analytics" aria-expanded="false" aria-controls="analytics">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Data Analytics</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="analytics">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="maps.html">Map</a></li>
+                <li class="nav-item"> <a class="nav-link" href="charts.html">Charts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="lookerchart.html">Looker Chart</a></li>
+               
+               
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#archive" aria-expanded="false" aria-controls="archive">
+              <span class="menu-icon">
+                 <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">Reports</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="archive">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="listofbuildingpermits.html">Evaluation Clearance</a></li>
+                <li class="nav-item"> <a class="nav-link" href="listofestablishments.html">Inspection Certificate</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="listofclearance.html">Electrical Clearance</a></li>              
+                <li class="nav-item"> <a class="nav-link" href="listofoccupancy.html">Occupancy Clearance</a></li>
+                
+               
+               
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <span class="menu-icon">
+                <i class="mdi mdi-security"></i>
+              </span>
+              <span class="menu-title">Archives</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+               <li class="nav-item"> <a class="nav-link" href="arcevaluationclearance.html"> Evaluation Clearance </a></li>
+                <li class="nav-item"> <a class="nav-link" href="arcinspectioncertificate.html"> Inspection Certificate </a></li>
+                <li class="nav-item"> <a class="nav-link" href="arcelectricalclearances.html"> Electrical Clearance </a></li>         
+                <li class="nav-item"> <a class="nav-link" href="arcoccupancyclearance.html"> Occupancy Clearance </a></li>
+                
+              </ul>
+            </div>
+          </li>
+
+         
+
+
+        
+          
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+           
+          
+          
+         
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+         
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+             
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+             
+              
+              
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="123.png" alt="">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name" id="name1">admin</p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                  <span style="margin-top: -20px; margin-left:90px" id="pos"></span>
+                </a>
+                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item" href="index.html">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+             <h4 class="card-title">DOLORES FIRE STATION</h4>
+            
+          
+           <div class="row">
+            
+        
+              
+
+               <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 id="clear" class="mb-0"></h3>
+                          
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success">
+                          <span class="mdi mdi-file"></span>
+                        </div>
+                      </div>
+                    </div>
+                  <a style="color: white; transition: 0.5s;" href="listofbuildingpermits.html">
+                    <h6 class="text-muted font-weight-normal">Evaluation Clearance</h6>
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+               <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 id="estab" class="mb-0"></h3>
+                          
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success">
+                          <span class="mdi mdi-file"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <a style="color: white; transition: 0.5s;" href="listofestablishments.html">
+                    <h6 class="text-muted font-weight-normal">Inspection Certificate</h6>
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 id="acc" class="mb-0"></h3>
+                          
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success">
+                          <span class="mdi mdi-file"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <a style="color: white; transition: 0.5s;" href="listofclearance.html">
+                    <h6 class="text-muted font-weight-normal">Electrical Clearance</h6>
+                  </a>
+                  </div>
+                </div>
+              </div>  
+
+               <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 id="occup" class="mb-0"></h3>
+                          
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success">
+                          <span class="mdi mdi-file"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <a style="color: white; transition: 0.5s;" href="listofoccupancy.html">
+                    <h6 class="text-muted font-weight-normal">Occupancy Clearance</h6>
+                  </a>
+                  </div>
+                </div>
+              </div>
+
+
+              
+            </div>
+            <div class="row">
+              <div class="col-md-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4>Update Officials</h4>
+                    <br>
+                    <form>
+                       <input id="employeeid" class="form-control" readonly hidden>
+                       <br>
+                      <label>Official</label>
+                      <input id="offname" class="form-control">
+                      <br>
+                      <label>Position</label>
+                      <br>
+                      <input id="pos12" class="form-control" readonly>
+                      
+
+                   
+<br>
+ <button style="float: right;" type="button" id ="save" class="btn btn-outline-primary">
+                     Update
+                    </button>
+                    
+                 
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+
+                    <h4>BFP OFFICIALS</h4>
+                    <Br>
+                   
+                   
+                   
+
+                   <div style="overflow: scroll ;max-height: 300px; width: 100%;">
+                      <table id="allrecords"  class="table table-bordered">
+                        <col style="width:5%">
+                            <col style="width:35%">
+                            <col style="width:75%">
+                  <thead>
+                    <tr>
+                     
+                     <th>Select</th>
+                    
+                     <th hidden="">ID</th>
+                    <th scope="col">Position</th>
+                        <th scope="col">Officials</th>
+                       
+            
+
+                    
+                     
+                              </tr>
+                  </thead>
+                   
+
+                  
+
+              </table>          
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+
+
+
+        
+          <!-- content-wrapper ends -->
+
+
+
+<style>
+
+  .official{
+    text-align: center;
+    font: 20px;
+    font-weight: 500;
+    margin: 5px 0 -20px 0;
+  }
+
+  .posi{
+    float: left;
+    font: 15px;
+    font-weight: 400;
+  }
+  
+   .modal_btn{
+    padding: 2px 15px 2px 15px;
+   border-radius: 5px;
+   transition: .5s;
+  }
+
+  .modal_btn:hover{
+    background: transparent;
+    border: solid 1px white;
+    color: white;
+  }
+  hr{
+    color: white;
+  }
+
+
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1; /* Place it on top of everything else */
+}
+
+/* Styles for the modal content */
+.modal-content {
+    background-color: black;
+    margin: 15% auto; /* Center the modal vertically */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+</style>
+
+
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright @Keyan(keynocounter)</span>
+             
+            </div>
+          </footer>
+
+
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- fullCalendar -->
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+
+<!-- Page specific script -->
+<script>
+
+
+  
+$(function () {
+
+ 
+
+  checkus();
+
+  function checkus(){
+
+     let x = decodeURIComponent(document.cookie);
+                               $("#curruser").text(x);
+                               
+                             var emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+                             var extractedEmails = x.match(emailRegex);
+                             $("#name1").text(extractedEmails);
+                             getcurrentuser(extractedEmails);
+                          
+
+  }
+
+
+                        function getcurrentuser(a){
+                    $.ajax({
+                                          type: "POST",
+                                          url: "php/retrievecurrentuser.php",
+                                          dataType: "json",
+                                            data: {
+                                              a:a, 
+                                             
+                                             
+                                         
+                                            },
+                                          success: function(result){
+                                            var _res = result;
+                                            if(_res.status == 1){
+                                              alert(_res.a1);
+                                            
+                                                       
+                                                        $("#name1").text(_res.a1);
+                                                       
+                                                     
+                                             
+                                            } 
+
+                                            else{
+                                                
+                                             //  window.location="index.html";
+
+
+                                            }
+                                          }
+                                        });}
+
+
+
+
+  
+   $("#save").click(function(){
+
+
+    
+           var a = $("#employeeid").val();
+           var b = $("#offname").val();
+           var c = $("#pos12").val();
+          
+     
+
+    
+
+          
+                         if (a.length > 0 ){
+                                   
+                                 
+
+                                  updateofficial(a,b,c);
+
+            
+      }
+  
+    
+    });
+
+
+
+    
+ function   updateofficial(a,b,c){
+
+                  $.ajax({
+                  type: "POST",
+                  url: "php/updateofficial.php",
+                  dataType: "json",
+                  data: {
+                      a:a,
+                      b:b,
+                      c:c,
+                     
+                 
+          
+            
+                            },
+                        
+                            success: function(result) {
+                            var _res = result;
+                              if (_res.status == 1){
+
+
+  
+                                      alert("Successfully updated!");
+                                       window.location = "dashboard.html"
+
+                                      
+                                     
+                                  
+                               
+                          
+                           
+                           
+                              } else if(_res.status == 2){
+                                   alert("Update Failed.");
+                                         window.location = "dashboard.html"
+                                   
+                          
+                           
+                              }
+                              
+                            }
+                          
+                             
+
+                          });
+                        }
+
+
+
+                     $("#allrecords").click(function(){
+
+         var clearance = $('input[name=rrec]:checked').val();
+               getpositions(clearance);
+
+                $("#employeeid").val(clearance);
+               
+                     
+                     
+                  getpositions(clearance);
+                            
+                       });
+
+
+
+                           function getpositions(a){
+                
+
+                          $.ajax({
+                            type: "POST",
+                            url: "php/retrieveofficials.php",
+                            dataType: "json",
+                              data: {
+                               a:a,
+                               
+                           
+                              },
+                            success: function(result){
+                              var _res = result;
+                              if(_res.status == 1){
+                              
+                                
+                                $("#offname").val(_res.a3);
+                                $("#pos12").val(_res.a2);
+
+
+                               
+                                 
+
+                           
+                              } 
+                            }
+                          });}
+
+
+
+
+
+
+
+
+
+
+
+       function loadallrecords(){
+      
+
+      $("#allrecords").find("tr.re-list").remove();
+      $.ajax({
+        type: "POST",
+        url: "php/bfpofficials.php",
+        dataType: "json",
+        data: {
+      
+      
+         
+          
+        },
+        success: function(result){
+          if(typeof(result.status) === 'undefined')
+            $.each(result, function(val, key) {
+              $("#allrecords tr:last").after("<tr class='re-list'>" + 
+                "<td><input type='radio' name='rrec' value='" + key.officials + "' /></td>" +
+                     "<td>" + key.position+ "</td>" +
+                     "<td>" + key.name + "</td>" +  
+            
+                
+
+                "<td></td></tr>");
+
+
+
+
+
+            });
+            var rows = $('#allrecords').find('tr').length;
+            if(rows == 1)
+              $("#allrecords tr:last").after("<tr class='re-list'><td colspan='2'>No record to display.</td></tr>");
+    
+        }
+
+      });
+    }
+
+
+
+
+
+  function count1(){
+      var type = "account";
+
+      $.ajax({
+        type: "POST",
+        url: "php/count.php",
+        dataType: "json",
+          data: {
+           type,
+           
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+             $("#acc").text(_res.unid);
+
+            
+          } 
+        }
+      });
+
+    }
+
+
+     function count2(){
+        var type = "cle";
+
+      $.ajax({
+        type: "POST",
+        url: "php/count.php",
+        dataType: "json",
+          data: {
+           
+           type,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+             $("#clear").text(_res.unid);
+
+            
+          } 
+        }
+      });
+
+    }
+
+
+    function count3(){
+        var type = "establish";
+
+      $.ajax({
+        type: "POST",
+        url: "php/count.php",
+        dataType: "json",
+          data: {
+           
+           type,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+             $("#estab").text(_res.unid);
+
+            
+          } 
+        }
+      });
+
+    }
+
+    function count4(){
+        var type = "occupan";
+
+      $.ajax({
+        type: "POST",
+        url: "php/count.php",
+        dataType: "json",
+          data: {
+           
+           type,
+       
+          },
+        success: function(result){
+          var _res = result;
+          if(_res.status == 1){
+             $("#occup").text(_res.unid);
+
+            
+          } 
+        }
+      });
+
+    }
+
+
+
+
+
+  
+
+                       
+
+
+
+
+
+$(window).on("load", loadallrecords());
+
+
+
+
+$(window).on("load", count1());
+$(window).on("load", count2());
+$(window).on("load", count3());
+$(window).on("load", count4());
+
+
+
+
+
+
+
+
+   })
+
+</script>
+
+
+
+
+  </body>
+</html>
+
+
+
